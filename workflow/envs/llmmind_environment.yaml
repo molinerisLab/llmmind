@@ -6,6 +6,9 @@ dependencies:
   - snakemake
   - python=3.12
   - pytorch
+  - torchvision
+  - torchaudio
+  - timm
   - tqdm
   - datasets
   - scikit-learn
@@ -13,5 +16,3 @@ dependencies:
   - accelerate
   - sentencepiece
   - protobuf
-  - pip
-  - pytorch

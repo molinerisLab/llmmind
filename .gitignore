@@ -2,4 +2,4 @@
 .snakemake
 resources/
 results/
-workflow/envs/platonic_representation/
+workflow/envs/llmmind/
