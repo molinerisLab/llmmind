@@ -1,0 +1,6 @@
+LLM_urls:
+  openllama_3b: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
+  openllama_7b: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
+  openllama_13b: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
+  llama_7b: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-7b_pool-avg.pt"
+  llama_13b: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-13b_pool-avg.pt"
