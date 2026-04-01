@@ -1,0 +1,9 @@
+configfile: "config/coinfig.yaml"
+
+rule download_llm:
+    output:
+        directory("resources/models/{model_name}")
+    shell:
+        r"""
+            workflow/scripts/save_pretrained.py {wildcards.model_name} {output}
+        """

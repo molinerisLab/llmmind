@@ -1,0 +1,17 @@
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - snakemake
+  - python=3.12
+  - pytorch
+  - tqdm
+  - datasets
+  - scikit-learn
+  - transformers
+  - accelerate
+  - sentencepiece
+  - protobuf
+  - pip
+  - pytorch
