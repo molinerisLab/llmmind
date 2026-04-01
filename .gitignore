@@ -1,0 +1,5 @@
+.env
+.snakemake
+resources/
+results/
+workflow/envs/platonic_representation/

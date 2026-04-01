@@ -2,6 +2,9 @@
 import os
 import argparse
 
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+
 def main():
     parser = argparse.ArgumentParser(description="Embed script skeleton")
     parser.add_argument("--model-path", required=True, help="Path to the language model")
