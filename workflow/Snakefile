@@ -1,4 +1,4 @@
-configfile: "config/coinfig.yaml"
+configfile: "config/config.yaml"
 
 rule download_llm:
     output:
@@ -6,4 +6,17 @@ rule download_llm:
     shell:
         r"""
             workflow/scripts/save_pretrained.py {wildcards.model_name} {output}
+        """
+
+rule embed:
+    input:
+        model_dir="resources/models/{model_name}",
+        input_dir="resources/stimuli"
+    output:
+        directory("results/embeddings/{model_name}")
+    shell:
+        r"""
+            python workflow/scripts/embed.py \
+                --model-path {input.model_dir} \
+                --input-dir {input.input_dir}
         """
