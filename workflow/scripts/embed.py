@@ -1,40 +1,26 @@
 #!/usr/bin/env python
 import os
-#import json
+import pandas as pd
 import argparse
 
 import torch
-from transformers import AutoTokenizer, AutoModel
-
-## define a function that get the embedding for a given text, cache the results on a json file, and avoid redundant calls to the API
-#def get_embedding(embedding_cache, embedding_cache_file, text, client, model = "text-embedding-3-small"):
-#    # check if the embedding of 'text' wrt the chosen model is already cached
-#    if text in embedding_cache and embedding_cache[text].get('model') == model:
-#        return embedding_cache[text]['embedding']
-#    # if not cached, call the OpenAI API to get the embedding
-#    response = client.embeddings.create(
-#        input = text,
-#        model = model
-#    )
-#    embedding = response.data[0].embedding
-#    # cache the embedding with model info
-#    embedding_cache[text] = {'embedding': embedding, 'model': model}
-#    # save the updated cache to the json file
-#    with open(embedding_cache_file, "w") as f: # open the file in "w"rite mode
-#        json.dump(embedding_cache, f)          # convert the python object into a json string and write it into the file
-#    return embedding                           # return the embedding "vector" for 'text'
+from transformers import AutoTokenizer, AutoModel, BitsAndBytesConfig
 
 def main():
     parser = argparse.ArgumentParser(description="Embed script skeleton")
-    parser.add_argument("--model-path", 
-                        required=True, 
-                        help="Path to the language model"
-                        )
-    parser.add_argument("--input-dir", 
+    parser.add_argument("--input_dir", 
                         required=True, 
                         help="Path to the input directory containing txt files to embed"
                         )
-    parser.add_argument("--quantization", 
+    parser.add_argument("--output",
+                        required=True,
+                        help="Path to the output file where embeddings will be saved"
+                        )
+    parser.add_argument("--model_path", 
+                        required=True, 
+                        help="Path to the language model"
+                        )
+    parser.add_argument("--quantization_method", 
                         choices=["4bit", "8bit"], 
                         help="Quantization method"
                         )
@@ -43,7 +29,17 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
-    model = AutoModel.from_pretrained(args.model_path)
+    
+    quantization_config = None
+    if args.quantization_method == "4bit":
+        quantization_config = BitsAndBytesConfig(load_in_4bit=True)
+    elif args.quantization_method == "8bit":
+        quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+    model = AutoModel.from_pretrained(
+        args.model_path,
+        quantization_config=quantization_config,
+        device_map="auto" if quantization_config is not None else None
+    )
     
     # load txt in input dir in a list of stirngs
     stimuli = []
@@ -59,14 +55,26 @@ def main():
         return_tensors="pt"
     )
 
-    for i in range(len(stimuli)):
+    device = next(model.parameters()).device
+    tokens = {k: v.to(device) for k, v in tokens.items()}
+
+    records = []
+    for i, stimulus in enumerate(stimuli):
         with torch.no_grad():
             llm_output = model(
                 input_ids=tokens['input_ids'][i].unsqueeze(0),
                 attention_mask=tokens['attention_mask'][i].unsqueeze(0),
             )
-        # pooling strategy: mean pooling along sequence dimension
-        print(f"Stimulus {i} embedding: {llm_output.last_hidden_state.mean(dim=1)}")
+
+        embedding = llm_output.last_hidden_state.mean(dim=1).squeeze(0).cpu().tolist()
+
+        records.append({
+            "stimulus": stimulus,
+            "embedding": embedding,
+        })
+
+    df = pd.DataFrame(records)
+    df.to_parquet(args.output, index=False)
 
 if __name__ == "__main__":
     main()

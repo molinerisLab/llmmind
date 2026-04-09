@@ -13,10 +13,16 @@ rule embed:
         model_dir="resources/models/{model_name}",
         input_dir="resources/stimuli"
     output:
-        directory("results/embeddings/{model_name}")
+        "results/embeddings/{model_name}_embeddings.parquet"
+    params:
+        quantization_method=config["quantization_method"]
+    conda:
+        "envs/embed_environment.yaml"
     shell:
         r"""
-            python workflow/scripts/embed.py \
-                --model-path {input.model_dir} \
-                --input-dir {input.input_dir}
+            workflow/scripts/embed.py \
+                --input_dir {input.input_dir} \
+                --output {output} \
+                --model_path {input.model_dir} \
+                --quantization_method {params.quantization_method}
         """
