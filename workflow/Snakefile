@@ -1,28 +1,53 @@
 configfile: "config/config.yaml"
 
-rule download_llm:
+MODEL_KEYS = list(config["models"].keys())
+
+rule all:
+    input:
+        expand(
+            "results/cosine_similarity/{model}_cosine_similarity.parquet",
+            model=MODEL_KEYS
+        )
+
+rule download_pretrained_llm:
     output:
-        directory("resources/models/{model_name}")
+        directory("resources/models/{config[model_name][name]}")
+    params:
+        model_name=config["model_name"]
     shell:
         r"""
-            workflow/scripts/save_pretrained.py {wildcards.model_name} {output}
+            workflow/scripts/save_pretrained.py {params.model_name} {output}
         """
 
-rule embed:
+rule get_embeddings:
     input:
-        model_dir="resources/models/{model_name}",
+        model_dir="resources/models/{config[model_name][name]}",
         input_dir="resources/stimuli"
     output:
-        "results/embeddings/{model_name}_embeddings.parquet"
+        "results/embeddings/{config[model_name][name]}_embeddings.parquet"
     params:
         quantization_method=config["quantization_method"]
     conda:
-        "envs/embed_environment.yaml"
+        "envs/get_embeddings_environment.yaml"
     shell:
         r"""
-            workflow/scripts/embed.py \
+            workflow/scripts/get_embeddings.py \
                 --input_dir {input.input_dir} \
                 --output {output} \
                 --model_path {input.model_dir} \
                 --quantization_method {params.quantization_method}
+        """
+
+rule cosine_similarity:
+    input:
+        embedding_dataframe="results/embeddings/{config[model_name][name]}_embeddings.parquet"
+    output:
+        cosine_similarity="results/cosine_similarity/{config[model_name][name]}_cosine_similarity.parquet"
+    conda:
+        "envs/cosine_similarity_environment.yaml"
+    shell:
+        r"""
+            workflow/scripts/cosine_similarity.py \
+                --embedding_dataframe {input.embedding_dataframe} \
+                --cosine_similarity {output.cosine_similarity}
         """

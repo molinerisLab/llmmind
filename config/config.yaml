@@ -1,10 +1,20 @@
-# urls to download llm's
-LLM_urls:
-  openllama_3b:  "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
-  openllama_7b:  "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
-  openllama_13b: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
-  llama_7b:      "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-7b_pool-avg.pt"
-  llama_13b:     "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-13b_pool-avg.pt"
+# models name
+models:
+  openllama_3b:
+    name: "OpenLLaMA-3B"
+    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
+  openllama_7b:
+    name: "OpenLLaMA-7B"
+    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
+  openllama_13b:
+    name: "OpenLLaMA-13B"
+    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
+  llama_7b:
+    name: "Llama-7B"
+    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-7b_pool-avg.pt"
+  llama_13b:
+    name: "Llama-13B"
+    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-13b_pool-avg.pt"
 
 quantization_method:
   - "4bit"
