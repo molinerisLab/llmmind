@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import sys
 from transformers import AutoModel, AutoTokenizer
 
@@ -10,8 +9,8 @@ def save_pretrained_model(model_name, save_dir):
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python workflow/scripts/save_pretrained_llm.py <model_name> <save_dir>")
+        print("Usage: python3 workflow/scripts/save_pretrained_llm.py <model_name> <save_dir>")
         sys.exit(1)
-    model_name = snakemake.wildcards.model_name # sys.argv[1]
-    save_dir = snakemake.output[0]
+    model_name = sys.argv[1]
+    save_dir = sys.argv[2]
     save_pretrained_model(model_name, save_dir)

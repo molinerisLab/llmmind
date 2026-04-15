@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 import os
 import re
 import pandas as pd
@@ -21,6 +20,10 @@ def main():
     parser.add_argument("--quantization_method", 
                         choices=["4bit", "8bit"],
                         help="Quantization method")
+    parser.add_argument("--excluded_stimuli",
+                        nargs="*",
+                        default=[],
+                        help="List of stimuli to exclude from embedding")
     args = parser.parse_args()
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_path)
@@ -45,6 +48,8 @@ def main():
     for filename in sorted(os.listdir(args.input_dir)):
         match = pattern.match(filename)
         if not match:
+            continue
+        if task in args.excluded_stimuli:
             continue
 
         task = match.group(1)

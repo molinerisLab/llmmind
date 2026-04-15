@@ -11,43 +11,47 @@ rule all:
 
 rule download_pretrained_llm:
     output:
-        directory("resources/models/{config[model_name][name]}")
+        model_dir=directory("resources/models/{model}")
     params:
-        model_name=config["model_name"]
+        model_url=lambda wc: config["models"][wc.model]["url"]
+    conda:
+        "envs/download_pretrained_llm_environment.yaml"
     shell:
         r"""
-            workflow/scripts/save_pretrained.py {params.model_name} {output}
+            python3 workflow/scripts/download_pretrained_llm.py "{params.model_url}" "{output.model_dir}"
         """
 
 rule get_embeddings:
     input:
-        model_dir="resources/models/{config[model_name][name]}",
+        model_dir="resources/models/{model}",
         input_dir="resources/stimuli"
     output:
-        "results/embeddings/{config[model_name][name]}_embeddings.parquet"
+        embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     params:
-        quantization_method=config["quantization_method"]
+        quantization_method=config["quantization_method"][0],
+        excluded_stimuli=" ".join(config["schema_subtasks"])
     conda:
         "envs/get_embeddings_environment.yaml"
     shell:
         r"""
-            workflow/scripts/get_embeddings.py \
-                --input_dir {input.input_dir} \
-                --output {output} \
-                --model_path {input.model_dir} \
-                --quantization_method {params.quantization_method}
+            python3 workflow/scripts/get_embeddings.py \
+                --input_dir "{input.input_dir}" \
+                --output "{output.embedding_dataframe}" \
+                --model_path "{input.model_dir}" \
+                --quantization_method "{params.quantization_method}" \
+                --excluded_stimuli {params.excluded_stimuli}
         """
 
 rule cosine_similarity:
     input:
-        embedding_dataframe="results/embeddings/{config[model_name][name]}_embeddings.parquet"
+        embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     output:
-        cosine_similarity="results/cosine_similarity/{config[model_name][name]}_cosine_similarity.parquet"
+        cosine_similarity="results/cosine_similarity/{model}_cosine_similarity.parquet"
     conda:
         "envs/cosine_similarity_environment.yaml"
     shell:
         r"""
-            workflow/scripts/cosine_similarity.py \
-                --embedding_dataframe {input.embedding_dataframe} \
-                --cosine_similarity {output.cosine_similarity}
+            python3 workflow/scripts/cosine_similarity.py \
+                --embedding_dataframe "{input.embedding_dataframe}" \
+                --cosine_similarity "{output.cosine_similarity}"
         """
