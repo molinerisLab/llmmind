@@ -13,12 +13,12 @@ rule download_pretrained_llm:
     output:
         model_dir=directory("resources/models/{model}")
     params:
-        model_url=lambda wc: config["models"][wc.model]["url"]
+        hf_name=lambda wc: config["models"][wc.model]["hf_name"]
     conda:
         "envs/download_pretrained_llm_environment.yaml"
     shell:
         r"""
-            python3 workflow/scripts/download_pretrained_llm.py "{params.model_url}" "{output.model_dir}"
+            python3 workflow/scripts/download_pretrained_llm.py {params.hf_name:q} {output.model_dir:q}
         """
 
 rule get_embeddings:
@@ -35,23 +35,25 @@ rule get_embeddings:
     shell:
         r"""
             python3 workflow/scripts/get_embeddings.py \
-                --input_dir "{input.input_dir}" \
-                --output "{output.embedding_dataframe}" \
-                --model_path "{input.model_dir}" \
-                --quantization_method "{params.quantization_method}" \
+                --input_dir {input.input_dir:q} \
+                --output {output.embedding_dataframe:q} \
+                --model_path {input.model_dir:q} \
+                --quantization_method {params.quantization_method} \
                 --excluded_stimuli {params.excluded_stimuli}
         """
 
-rule cosine_similarity:
+rule compute_cosine_similarity:
     input:
         embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     output:
         cosine_similarity="results/cosine_similarity/{model}_cosine_similarity.parquet"
+    params:
+        distance=config["distance"]
     conda:
-        "envs/cosine_similarity_environment.yaml"
+        "envs/compute_cosine_similarity_environment.yaml"
     shell:
         r"""
-            python3 workflow/scripts/cosine_similarity.py \
-                --embedding_dataframe "{input.embedding_dataframe}" \
-                --cosine_similarity "{output.cosine_similarity}"
+            python3 workflow/scripts/compute_cosine_similarity.py \
+                --embedding_dataframe {input.embedding_dataframe:q} \
+                --cosine_similarity {output.cosine_similarity:q}
         """

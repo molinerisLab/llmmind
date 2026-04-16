@@ -33,7 +33,7 @@ def main():
     embedding_df = pd.read_parquet(embedding_dataframe, engine = "pyarrow")
     
     # compute cosine similarities for all the concepts in the embedding dataframe
-    X = normalize_l2(embedding_df.values)
+    X = normalize_l2(embedding_df["embedding"].tolist())
     result = X @ X.T
 
     # remove cosine self-similarities

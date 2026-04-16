@@ -2,7 +2,9 @@
 models:
   openllama_3b:
     name: "OpenLLaMA-3B"
-    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
+    hf_name: "openlm-research/open_llama_3b"
+#    path: "./results/features/minhuh/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
+#    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
 #  openllama_7b:
 #    name: "OpenLLaMA-7B"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
@@ -27,6 +29,5 @@ schema_subtasks:
   - "upintheair"
   - "vinny"
 
-quantization_method:
-  - "4bit"
-#  - "8bit"
+# quantization method to use when computing embeddings (e.g., "4bit", "8bit", or None for no quantization)
+quantization_method: "4bit" # "8bit"

@@ -8,16 +8,16 @@ from transformers import AutoTokenizer, AutoModel, BitsAndBytesConfig
 
 def main():
     parser = argparse.ArgumentParser(description="Embed script skeleton")
-    parser.add_argument("--input_dir", 
+    parser.add_argument("--input_dir",
                         required=True,
                         help="Path to the input directory containing txt files to embed")
-    parser.add_argument("--output", 
+    parser.add_argument("--output",
                         required=True,
                         help="Path to the output file where embeddings will be saved")
-    parser.add_argument("--model_path", 
+    parser.add_argument("--model_path",
                         required=True,
                         help="Path to the language model")
-    parser.add_argument("--quantization_method", 
+    parser.add_argument("--quantization_method",
                         choices=["4bit", "8bit"],
                         help="Quantization method")
     parser.add_argument("--excluded_stimuli",
@@ -35,13 +35,20 @@ def main():
         quantization_config = BitsAndBytesConfig(load_in_4bit=True)
     elif args.quantization_method == "8bit":
         quantization_config = BitsAndBytesConfig(load_in_8bit=True)
+
     model = AutoModel.from_pretrained(
         args.model_path,
         quantization_config=quantization_config,
         device_map="auto" if quantization_config is not None else None
     )
+    model.eval()
 
-    # load txt files and keep both task name and stimulus text
+    # Determine device for non-quantized models.
+    # For quantized models with device_map="auto", inputs can usually stay on the
+    # device of the embedding layer / first parameter.
+    device = next(model.parameters()).device
+
+    # Load txt files and keep both task name and stimulus text
     items = []
     pattern = re.compile(r"^(.+)_transcript\.txt$")
 
@@ -49,13 +56,14 @@ def main():
         match = pattern.match(filename)
         if not match:
             continue
+
+        task = match.group(1)
         if task in args.excluded_stimuli:
             continue
 
-        task = match.group(1)
         filepath = os.path.join(args.input_dir, filename)
 
-        with open(filepath, "r") as f:
+        with open(filepath, "r", encoding="utf-8") as f:
             stimulus = f.read()
 
         items.append({
@@ -63,38 +71,39 @@ def main():
             "stimulus": stimulus,
         })
 
-    stimuli = [item["stimulus"] for item in items]
-
-    tokens = tokenizer(
-        stimuli,
-        padding=True,
-        truncation=True,
-        return_tensors="pt"
-    )
-
-    device = next(model.parameters()).device
-    tokens = {k: v.to(device) for k, v in tokens.items()}
-
     records = []
-    for i, item in enumerate(items):
-        with torch.no_grad():
-            llm_output = model(
-                input_ids=tokens["input_ids"][i].unsqueeze(0),
-                attention_mask=tokens["attention_mask"][i].unsqueeze(0),
+    with torch.no_grad():
+        for item in items:
+            # Tokenize one stimulus at a time on CPU
+            tokens = tokenizer(
+                item["stimulus"],
+                padding=True,
+                truncation=True,
+                return_tensors="pt"
             )
 
-        embedding = llm_output.last_hidden_state.mean(dim=1).squeeze(0).cpu().tolist()
+            # Move only this stimulus to GPU
+            tokens = {k: v.to(device) for k, v in tokens.items()}
 
-        records.append({
-            "task": item["task"],
-            "stimulus": item["stimulus"],
-            "embedding": embedding,
-        })
+            llm_output = model(**tokens)
+
+            embedding = (
+                llm_output.last_hidden_state
+                .mean(dim=1)
+                .squeeze(0)
+                .cpu()
+                .tolist()
+            )
+
+            records.append({
+                "task": item["task"],
+                "embedding": embedding,
+            })
 
     df = pd.DataFrame(records)
     df = df.set_index("task")
-
-    df.to_parquet(args.output, engine = "pyarrow", index=True)
+    print(df)
+    df.to_parquet(args.output, engine="pyarrow", index=True)
 
 if __name__ == "__main__":
     main()
