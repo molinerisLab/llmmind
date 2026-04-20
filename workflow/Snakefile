@@ -28,7 +28,7 @@ rule get_embeddings:
     output:
         embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     params:
-        quantization_method=config["quantization_method"][0],
+        quantization_method=config["quantization_method"],
         excluded_stimuli=" ".join(config["schema_subtasks"])
     conda:
         "envs/get_embeddings_environment.yaml"

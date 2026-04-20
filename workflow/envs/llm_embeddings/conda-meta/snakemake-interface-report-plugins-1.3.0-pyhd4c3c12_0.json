@@ -1,0 +1,190 @@
+{
+  "name": "snakemake-interface-report-plugins",
+  "version": "1.3.0",
+  "build": "pyhd4c3c12_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/bioconda/noarch",
+  "subdir": "noarch",
+  "fn": "snakemake-interface-report-plugins-1.3.0-pyhd4c3c12_0.conda",
+  "md5": "e6fd8cfb23b294da699e395dbc968d11",
+  "url": "https://conda.anaconda.org/bioconda/noarch/snakemake-interface-report-plugins-1.3.0-pyhd4c3c12_0.conda",
+  "sha256": "7b7be41b59f2d904acb014ee182561610c930bef5f607742011ee23befe73831",
+  "depends": [
+    "python >=3.11.0,<4.0.0",
+    "snakemake-interface-common >=1.16.0,<2.0.0"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1761910544000,
+  "size": 14490,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/home/jsalvala/miniforge3/pkgs/snakemake-interface-report-plugins-1.3.0-pyhd4c3c12_0.conda",
+  "extracted_package_dir": "/home/jsalvala/miniforge3/pkgs/snakemake-interface-report-plugins-1.3.0-pyhd4c3c12_0",
+  "files": [
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__init__.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/common.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/interfaces.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/__init__.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/plugin.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/reporter.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/settings.py",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/common.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/interfaces.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/__pycache__/plugin.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/reporter.cpython-313.pyc",
+    "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/settings.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8",
+        "size_in_bytes": 5,
+        "sha256_in_prefix": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "194b96313fb46503e761e768286348f5a24afcaae8ac795e2a54c0981c996545",
+        "size_in_bytes": 3586,
+        "sha256_in_prefix": "194b96313fb46503e761e768286348f5a24afcaae8ac795e2a54c0981c996545"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "c138a12c303c1181d9ab1f296b11522942f92ee113219891da9a70785215fca5",
+        "size_in_bytes": 2047,
+        "sha256_in_prefix": "c138a12c303c1181d9ab1f296b11522942f92ee113219891da9a70785215fca5"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "ce9d029fb26c1685f6013b4e86d685608884dab985003e0e70c86d5248bc5b75",
+        "size_in_bytes": 88,
+        "sha256_in_prefix": "ce9d029fb26c1685f6013b4e86d685608884dab985003e0e70c86d5248bc5b75"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "d8f8c668913f188f5d7262c42338a6c8edd2ce78473e04b7154e9f13b1221578",
+        "size_in_bytes": 108,
+        "sha256_in_prefix": "d8f8c668913f188f5d7262c42338a6c8edd2ce78473e04b7154e9f13b1221578"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins-1.3.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "615738c532d632a19f14bdfad76d24eebcd7b6c4fa7b846426c87af15567d76b",
+        "size_in_bytes": 1076,
+        "sha256_in_prefix": "615738c532d632a19f14bdfad76d24eebcd7b6c4fa7b846426c87af15567d76b"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/common.py",
+        "path_type": "hardlink",
+        "sha256": "ed814a8c1c07ae786f8f7ea594062c1c6e04253b6fbb1b566f02b372cdd5a07e",
+        "size_in_bytes": 266,
+        "sha256_in_prefix": "ed814a8c1c07ae786f8f7ea594062c1c6e04253b6fbb1b566f02b372cdd5a07e"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/interfaces.py",
+        "path_type": "hardlink",
+        "sha256": "ff029225b6ca9ec2c267c9bf6cccc28dbd5ae57aabf19e37bb21611fc5846ce7",
+        "size_in_bytes": 2963,
+        "sha256_in_prefix": "ff029225b6ca9ec2c267c9bf6cccc28dbd5ae57aabf19e37bb21611fc5846ce7"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/registry/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "dae36c8a03a0e0b45c7a871db56ef220fe3a625a14a53ca8d8049fd46fb12352",
+        "size_in_bytes": 2012,
+        "sha256_in_prefix": "dae36c8a03a0e0b45c7a871db56ef220fe3a625a14a53ca8d8049fd46fb12352"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/registry/plugin.py",
+        "path_type": "hardlink",
+        "sha256": "3516e837dd1069d422cdf1a8f19c9182ea3813d0241a52a9c1fe24d0591da5f9",
+        "size_in_bytes": 833,
+        "sha256_in_prefix": "3516e837dd1069d422cdf1a8f19c9182ea3813d0241a52a9c1fe24d0591da5f9"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/reporter.py",
+        "path_type": "hardlink",
+        "sha256": "db64fbc89312ecbc2143c15d24b36b41705987776ea3615aab37bc7b53d5d95f",
+        "size_in_bytes": 1534,
+        "sha256_in_prefix": "db64fbc89312ecbc2143c15d24b36b41705987776ea3615aab37bc7b53d5d95f"
+      },
+      {
+        "_path": "site-packages/snakemake_interface_report_plugins/settings.py",
+        "path_type": "hardlink",
+        "sha256": "61727b016cb58c9236100c300daf50f8a4c60afd279b51664145f5228e5ac172",
+        "size_in_bytes": 357,
+        "sha256_in_prefix": "61727b016cb58c9236100c300daf50f8a4c60afd279b51664145f5228e5ac172"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 172
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/common.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 505
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/interfaces.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8209
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3066
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/registry/__pycache__/plugin.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1796
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/reporter.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2312
+      },
+      {
+        "_path": "lib/python3.13/site-packages/snakemake_interface_report_plugins/__pycache__/settings.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 881
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/jsalvala/miniforge3/pkgs/snakemake-interface-report-plugins-1.3.0-pyhd4c3c12_0",
+    "type": 1
+  }
+}

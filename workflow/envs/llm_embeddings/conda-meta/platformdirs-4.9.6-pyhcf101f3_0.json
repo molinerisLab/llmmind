@@ -1,0 +1,226 @@
+{
+  "name": "platformdirs",
+  "version": "4.9.6",
+  "build": "pyhcf101f3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "platformdirs-4.9.6-pyhcf101f3_0.conda",
+  "md5": "89c0b6d1793601a2a3a3f7d2d3d8b937",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/platformdirs-4.9.6-pyhcf101f3_0.conda",
+  "sha256": "8f29915c172f1f7f4f7c9391cd5dac3ebf5d13745c8b7c8006032615246345a5",
+  "depends": [
+    "python >=3.10",
+    "python"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1775741140000,
+  "size": 25862,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/home/jsalvala/miniforge3/pkgs/platformdirs-4.9.6-pyhcf101f3_0.conda",
+  "extracted_package_dir": "/home/jsalvala/miniforge3/pkgs/platformdirs-4.9.6-pyhcf101f3_0",
+  "files": [
+    "lib/python3.13/site-packages/platformdirs/__init__.py",
+    "lib/python3.13/site-packages/platformdirs/__main__.py",
+    "lib/python3.13/site-packages/platformdirs/_xdg.py",
+    "lib/python3.13/site-packages/platformdirs/android.py",
+    "lib/python3.13/site-packages/platformdirs/api.py",
+    "lib/python3.13/site-packages/platformdirs/macos.py",
+    "lib/python3.13/site-packages/platformdirs/py.typed",
+    "lib/python3.13/site-packages/platformdirs/unix.py",
+    "lib/python3.13/site-packages/platformdirs/version.py",
+    "lib/python3.13/site-packages/platformdirs/windows.py",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/METADATA",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/RECORD",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/WHEEL",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/platformdirs-4.9.6.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/__main__.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/_xdg.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/android.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/api.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/macos.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/unix.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/version.cpython-313.pyc",
+    "lib/python3.13/site-packages/platformdirs/__pycache__/windows.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "site-packages/platformdirs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "84bfd9ca1b10e447d87f85bf4ebe0ee85d2500e28bbd08b44d9e1efd618221ce",
+        "size_in_bytes": 30718,
+        "sha256_in_prefix": "84bfd9ca1b10e447d87f85bf4ebe0ee85d2500e28bbd08b44d9e1efd618221ce"
+      },
+      {
+        "_path": "site-packages/platformdirs/__main__.py",
+        "path_type": "hardlink",
+        "sha256": "32f33a7ca2690407a24d97243491928a15c52a44b8ead4bdfcfe60c92660dd12",
+        "size_in_bytes": 1633,
+        "sha256_in_prefix": "32f33a7ca2690407a24d97243491928a15c52a44b8ead4bdfcfe60c92660dd12"
+      },
+      {
+        "_path": "site-packages/platformdirs/_xdg.py",
+        "path_type": "hardlink",
+        "sha256": "bcd05be15b29defc791e879cb18194c15b01d5b7d8b6165c8d1939d452d851ea",
+        "size_in_bytes": 6391,
+        "sha256_in_prefix": "bcd05be15b29defc791e879cb18194c15b01d5b7d8b6165c8d1939d452d851ea"
+      },
+      {
+        "_path": "site-packages/platformdirs/android.py",
+        "path_type": "hardlink",
+        "sha256": "9db10963877236317e38ce516a50345892101c2532f0e2a2a060d2f46ffe6468",
+        "size_in_bytes": 10591,
+        "sha256_in_prefix": "9db10963877236317e38ce516a50345892101c2532f0e2a2a060d2f46ffe6468"
+      },
+      {
+        "_path": "site-packages/platformdirs/api.py",
+        "path_type": "hardlink",
+        "sha256": "d0b90b3a526d6ea120949169cb29d63facd2303117db76a47491117130f15967",
+        "size_in_bytes": 13415,
+        "sha256_in_prefix": "d0b90b3a526d6ea120949169cb29d63facd2303117db76a47491117130f15967"
+      },
+      {
+        "_path": "site-packages/platformdirs/macos.py",
+        "path_type": "hardlink",
+        "sha256": "237e96b3034f28c00016f1b9eec453babd0d6e75e957f86186ea52c7d3f880ec",
+        "size_in_bytes": 8090,
+        "sha256_in_prefix": "237e96b3034f28c00016f1b9eec453babd0d6e75e957f86186ea52c7d3f880ec"
+      },
+      {
+        "_path": "site-packages/platformdirs/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/platformdirs/unix.py",
+        "path_type": "hardlink",
+        "sha256": "4204f13fc13038079a2a99c281774d67d7e79a72a97a87b5202bff7b57c5a2fe",
+        "size_in_bytes": 12259,
+        "sha256_in_prefix": "4204f13fc13038079a2a99c281774d67d7e79a72a97a87b5202bff7b57c5a2fe"
+      },
+      {
+        "_path": "site-packages/platformdirs/version.py",
+        "path_type": "hardlink",
+        "sha256": "5c04c5705d8cf88917e5a33459c1d8440d5f91c1755d65e8342d581b56cf6e4d",
+        "size_in_bytes": 704,
+        "sha256_in_prefix": "5c04c5705d8cf88917e5a33459c1d8440d5f91c1755d65e8342d581b56cf6e4d"
+      },
+      {
+        "_path": "site-packages/platformdirs/windows.py",
+        "path_type": "hardlink",
+        "sha256": "7901646ce711708e58a6598fc79f4539def25c9961ab6ecfa4bec755a0bbb1ee",
+        "size_in_bytes": 14564,
+        "sha256_in_prefix": "7901646ce711708e58a6598fc79f4539def25c9961ab6ecfa4bec755a0bbb1ee"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "7dc437d6904fab5d1b6527ac1bdfe03044e9ad53649dadc143471a6f2472927c",
+        "size_in_bytes": 4683,
+        "sha256_in_prefix": "7dc437d6904fab5d1b6527ac1bdfe03044e9ad53649dadc143471a6f2472927c"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "1aa6b005909aed8fefa56a3de40e7618933727583e65e011238b819911b1e38e",
+        "size_in_bytes": 1871,
+        "sha256_in_prefix": "1aa6b005909aed8fefa56a3de40e7618933727583e65e011238b819911b1e38e"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "41c708c5adba6e097513ab8ccb9f1d7865a2fb469e22491a9e01dcc64da459fc",
+        "size_in_bytes": 87,
+        "sha256_in_prefix": "41c708c5adba6e097513ab8ccb9f1d7865a2fb469e22491a9e01dcc64da459fc"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "ec02d65768695d261323ee1224c785b652320819f9a9df35a6f9c5c3ccae6a60",
+        "size_in_bytes": 123,
+        "sha256_in_prefix": "ec02d65768695d261323ee1224c785b652320819f9a9df35a6f9c5c3ccae6a60"
+      },
+      {
+        "_path": "site-packages/platformdirs-4.9.6.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6",
+        "size_in_bytes": 1089,
+        "sha256_in_prefix": "29e0fd62e929850e86eb28c3fdccf0cefdf4fa94879011cffb3d0d4bed6d4db6"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 27127
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/__main__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1978
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/_xdg.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 11644
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/android.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12733
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/api.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 18497
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/macos.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12499
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/unix.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 18572
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/version.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 767
+      },
+      {
+        "_path": "lib/python3.13/site-packages/platformdirs/__pycache__/windows.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 19838
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/jsalvala/miniforge3/pkgs/platformdirs-4.9.6-pyhcf101f3_0",
+    "type": 1
+  }
+}

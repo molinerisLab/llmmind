@@ -1,0 +1,131 @@
+{
+  "name": "configargparse",
+  "version": "1.7.5",
+  "build": "pyhcf101f3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "configargparse-1.7.5-pyhcf101f3_0.conda",
+  "md5": "12389a21e7f69704b0ae77f44355e30b",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/configargparse-1.7.5-pyhcf101f3_0.conda",
+  "sha256": "7f8ea42a8411b433ec7244dfd30637d90564256c13a114dbe42455fe032ae89c",
+  "depends": [
+    "python >=3.10",
+    "toml",
+    "python"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1773233306000,
+  "size": 45817,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/home/jsalvala/miniforge3/pkgs/configargparse-1.7.5-pyhcf101f3_0.conda",
+  "extracted_package_dir": "/home/jsalvala/miniforge3/pkgs/configargparse-1.7.5-pyhcf101f3_0",
+  "files": [
+    "etc/conda/test-files/configargparse/1/tests/__init__.py",
+    "etc/conda/test-files/configargparse/1/tests/test_configargparse.py",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/METADATA",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/RECORD",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/WHEEL",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/configargparse-1.7.5.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/configargparse.py",
+    "lib/python3.13/site-packages/__pycache__/configargparse.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "etc/conda/test-files/configargparse/1/tests/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "15993d866eef06c2bc1b5ea936e829bad6ebac472262a25cfd744085309ca232",
+        "size_in_bytes": 46,
+        "sha256_in_prefix": "15993d866eef06c2bc1b5ea936e829bad6ebac472262a25cfd744085309ca232"
+      },
+      {
+        "_path": "etc/conda/test-files/configargparse/1/tests/test_configargparse.py",
+        "path_type": "hardlink",
+        "sha256": "f1217ff8b83845411837c0a7f907be11de30b8947cf262f1dd3085e6cbf93dce",
+        "size_in_bytes": 91185,
+        "sha256_in_prefix": "f1217ff8b83845411837c0a7f907be11de30b8947cf262f1dd3085e6cbf93dce"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "19249d050378ebb291ab634df5687ca6824f7c13b41dd8564b02daae09422e58",
+        "size_in_bytes": 23633,
+        "sha256_in_prefix": "19249d050378ebb291ab634df5687ca6824f7c13b41dd8564b02daae09422e58"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "29bfc94933854eb044253155d53be6fa7facd96b9250d372744066688190a2aa",
+        "size_in_bytes": 851,
+        "sha256_in_prefix": "29bfc94933854eb044253155d53be6fa7facd96b9250d372744066688190a2aa"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9",
+        "size_in_bytes": 91,
+        "sha256_in_prefix": "69e6228a0d35958183cc1812f07c565ce837b95eb51bd8a33acba9fa4f68d6c9"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "36206f646ffb25d76a1652f45038dfc8f190f7ac645c2f3fe9ad689f2bda67fc",
+        "size_in_bytes": 125,
+        "sha256_in_prefix": "36206f646ffb25d76a1652f45038dfc8f190f7ac645c2f3fe9ad689f2bda67fc"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "4a01a0948e46d7a94f44fda042d3e02e5319c2aa351357cd13492ca827e01d07",
+        "size_in_bytes": 1070,
+        "sha256_in_prefix": "4a01a0948e46d7a94f44fda042d3e02e5319c2aa351357cd13492ca827e01d07"
+      },
+      {
+        "_path": "site-packages/configargparse-1.7.5.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "f4897031f14e0780acb0346f98d4042f7098c18826b2dfc0e05dc57704d0f8d4",
+        "size_in_bytes": 15,
+        "sha256_in_prefix": "f4897031f14e0780acb0346f98d4042f7098c18826b2dfc0e05dc57704d0f8d4"
+      },
+      {
+        "_path": "site-packages/configargparse.py",
+        "path_type": "hardlink",
+        "sha256": "aaa177c5725b354d3759759d511712fa76700637d86ffb58bcbb3a3b8d630eb3",
+        "size_in_bytes": 74151,
+        "sha256_in_prefix": "aaa177c5725b354d3759759d511712fa76700637d86ffb58bcbb3a3b8d630eb3"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/__pycache__/configargparse.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 74296
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/jsalvala/miniforge3/pkgs/configargparse-1.7.5-pyhcf101f3_0",
+    "type": 1
+  }
+}

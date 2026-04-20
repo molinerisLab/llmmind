@@ -6,6 +6,12 @@ import argparse
 import torch
 from transformers import AutoTokenizer, AutoModel, BitsAndBytesConfig
 
+def mean_pool_last_hidden(last_hidden_state: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
+    mask = attention_mask.unsqueeze(-1).expand(last_hidden_state.size()).float()
+    summed = (last_hidden_state * mask).sum(dim=1)
+    counts = mask.sum(dim=1).clamp(min=1e-9)
+    return summed / counts
+
 def main():
     parser = argparse.ArgumentParser(description="Embed script skeleton")
     parser.add_argument("--input_dir",
@@ -87,22 +93,17 @@ def main():
 
             llm_output = model(**tokens)
 
-            embedding = (
-                llm_output.last_hidden_state
-                .mean(dim=1)
-                .squeeze(0)
-                .cpu()
-                .tolist()
+            pooled = mean_pool_last_hidden(
+                llm_output.last_hidden_state,
+                tokens["attention_mask"]
             )
 
-            records.append({
-                "task": item["task"],
-                "embedding": embedding,
-            })
+            embedding = pooled.squeeze(0).cpu().numpy()
+            records.append(embedding)
 
-    df = pd.DataFrame(records)
-    df = df.set_index("task")
-    print(df)
+    df = pd.DataFrame(records, index=[item["task"] for item in items])
+    df.index.name = "task"
+    df = df.astype("float32")
     df.to_parquet(args.output, engine="pyarrow", index=True)
 
 if __name__ == "__main__":

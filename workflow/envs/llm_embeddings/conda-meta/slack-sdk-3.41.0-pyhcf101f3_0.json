@@ -1,0 +1,2272 @@
+{
+  "name": "slack-sdk",
+  "version": "3.41.0",
+  "build": "pyhcf101f3_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "slack-sdk-3.41.0-pyhcf101f3_0.conda",
+  "md5": "229fe55c589e0dc0c6b4912873703c3a",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/slack-sdk-3.41.0-pyhcf101f3_0.conda",
+  "sha256": "a8f70eba87efc1181c3c86f4c4f55f2340b31ce3788bf1b84c3b8a2f075bfb62",
+  "depends": [
+    "python >=3.10",
+    "python"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1773393765000,
+  "size": 168389,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/home/jsalvala/miniforge3/pkgs/slack-sdk-3.41.0-pyhcf101f3_0.conda",
+  "extracted_package_dir": "/home/jsalvala/miniforge3/pkgs/slack-sdk-3.41.0-pyhcf101f3_0",
+  "files": [
+    "lib/python3.13/site-packages/slack/__init__.py",
+    "lib/python3.13/site-packages/slack/deprecation.py",
+    "lib/python3.13/site-packages/slack/errors.py",
+    "lib/python3.13/site-packages/slack/py.typed",
+    "lib/python3.13/site-packages/slack/rtm/__init__.py",
+    "lib/python3.13/site-packages/slack/rtm/client.py",
+    "lib/python3.13/site-packages/slack/signature/__init__.py",
+    "lib/python3.13/site-packages/slack/signature/verifier.py",
+    "lib/python3.13/site-packages/slack/version.py",
+    "lib/python3.13/site-packages/slack/web/__init__.py",
+    "lib/python3.13/site-packages/slack/web/async_base_client.py",
+    "lib/python3.13/site-packages/slack/web/async_client.py",
+    "lib/python3.13/site-packages/slack/web/async_internal_utils.py",
+    "lib/python3.13/site-packages/slack/web/async_slack_response.py",
+    "lib/python3.13/site-packages/slack/web/base_client.py",
+    "lib/python3.13/site-packages/slack/web/classes/__init__.py",
+    "lib/python3.13/site-packages/slack/web/classes/actions.py",
+    "lib/python3.13/site-packages/slack/web/classes/attachments.py",
+    "lib/python3.13/site-packages/slack/web/classes/blocks.py",
+    "lib/python3.13/site-packages/slack/web/classes/dialog_elements.py",
+    "lib/python3.13/site-packages/slack/web/classes/dialogs.py",
+    "lib/python3.13/site-packages/slack/web/classes/elements.py",
+    "lib/python3.13/site-packages/slack/web/classes/interactions.py",
+    "lib/python3.13/site-packages/slack/web/classes/messages.py",
+    "lib/python3.13/site-packages/slack/web/classes/objects.py",
+    "lib/python3.13/site-packages/slack/web/classes/views.py",
+    "lib/python3.13/site-packages/slack/web/client.py",
+    "lib/python3.13/site-packages/slack/web/deprecation.py",
+    "lib/python3.13/site-packages/slack/web/internal_utils.py",
+    "lib/python3.13/site-packages/slack/web/slack_response.py",
+    "lib/python3.13/site-packages/slack/webhook/__init__.py",
+    "lib/python3.13/site-packages/slack/webhook/async_client.py",
+    "lib/python3.13/site-packages/slack/webhook/client.py",
+    "lib/python3.13/site-packages/slack/webhook/internal_utils.py",
+    "lib/python3.13/site-packages/slack/webhook/webhook_response.py",
+    "lib/python3.13/site-packages/slack_sdk/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/aiohttp_version_checker.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/client.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/internal_utils.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/logs.py",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/response.py",
+    "lib/python3.13/site-packages/slack_sdk/errors/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/async_handler.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/builtin_async_handlers.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/builtin_handlers.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/builtin_interval_calculators.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/handler.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/interval_calculator.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/jitter.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/request.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/response.py",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/state.py",
+    "lib/python3.13/site-packages/slack_sdk/models/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/attachments/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/basic_objects.py",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/basic_components.py",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/block_elements.py",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/blocks.py",
+    "lib/python3.13/site-packages/slack_sdk/models/dialoags.py",
+    "lib/python3.13/site-packages/slack_sdk/models/dialogs/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/chunk.py",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/message.py",
+    "lib/python3.13/site-packages/slack_sdk/models/metadata/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/models/views/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/authorize_url_generator/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/amazon_s3/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/async_cacheable_installation_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/async_installation_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/cacheable_installation_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/file/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/installation_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/internals.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/bot.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/installation.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlalchemy/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlite3/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/redirect_uri_page_renderer/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/sqlalchemy_utils/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/amazon_s3/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/async_state_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/file/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlalchemy/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlite3/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/state_store.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_utils/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/async_rotator.py",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/rotator.py",
+    "lib/python3.13/site-packages/slack_sdk/proxy_env_variable_loader.py",
+    "lib/python3.13/site-packages/slack_sdk/py.typed",
+    "lib/python3.13/site-packages/slack_sdk/rtm/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/rtm/v2/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/rtm_v2/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/client.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/default_arg.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/group.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/internal_utils.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/response.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/types.py",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/user.py",
+    "lib/python3.13/site-packages/slack_sdk/signature/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/aiohttp/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/async_listeners.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/client.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/connection.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/frame_header.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/internals.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/client.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/interval_runner.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/listeners.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/messages.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/request.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/response.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/websocket_client/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/websockets/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/version.py",
+    "lib/python3.13/site-packages/slack_sdk/web/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/web/async_base_client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/async_chat_stream.py",
+    "lib/python3.13/site-packages/slack_sdk/web/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/async_internal_utils.py",
+    "lib/python3.13/site-packages/slack_sdk/web/async_slack_response.py",
+    "lib/python3.13/site-packages/slack_sdk/web/base_client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/chat_stream.py",
+    "lib/python3.13/site-packages/slack_sdk/web/client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/deprecation.py",
+    "lib/python3.13/site-packages/slack_sdk/web/file_upload_v2_result.py",
+    "lib/python3.13/site-packages/slack_sdk/web/internal_utils.py",
+    "lib/python3.13/site-packages/slack_sdk/web/legacy_base_client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/legacy_client.py",
+    "lib/python3.13/site-packages/slack_sdk/web/legacy_slack_response.py",
+    "lib/python3.13/site-packages/slack_sdk/web/slack_response.py",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__init__.py",
+    "lib/python3.13/site-packages/slack_sdk/webhook/async_client.py",
+    "lib/python3.13/site-packages/slack_sdk/webhook/client.py",
+    "lib/python3.13/site-packages/slack_sdk/webhook/internal_utils.py",
+    "lib/python3.13/site-packages/slack_sdk/webhook/webhook_response.py",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/INSTALLER",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/METADATA",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/RECORD",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/REQUESTED",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/WHEEL",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/direct_url.json",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/licenses/LICENSE",
+    "lib/python3.13/site-packages/slack_sdk-3.41.0.dist-info/top_level.txt",
+    "lib/python3.13/site-packages/slack/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/__pycache__/deprecation.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/__pycache__/errors.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/rtm/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/rtm/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/signature/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/signature/__pycache__/verifier.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/__pycache__/version.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/async_base_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/async_internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/async_slack_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/base_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/actions.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/attachments.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/blocks.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/dialog_elements.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/dialogs.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/elements.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/interactions.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/messages.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/objects.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/classes/__pycache__/views.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/deprecation.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/web/__pycache__/slack_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/webhook/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/webhook/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/webhook/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/webhook/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack/webhook/__pycache__/webhook_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/__pycache__/aiohttp_version_checker.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/logs.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/errors/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/async_handler.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_async_handlers.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_handlers.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_interval_calculators.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/handler.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/interval_calculator.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/jitter.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/request.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/state.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/attachments/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/__pycache__/basic_objects.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/basic_components.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/block_elements.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/blocks.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/__pycache__/dialoags.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/dialogs/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/chunk.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/message.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/metadata/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/models/views/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/authorize_url_generator/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/amazon_s3/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/async_cacheable_installation_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/async_installation_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/cacheable_installation_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/file/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/installation_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/internals.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/bot.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/installation.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlalchemy/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlite3/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/redirect_uri_page_renderer/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/sqlalchemy_utils/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/amazon_s3/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/async_state_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/file/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlalchemy/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlite3/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/state_store.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/state_utils/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/async_rotator.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/rotator.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/__pycache__/proxy_env_variable_loader.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/rtm/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/rtm/v2/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/rtm_v2/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/default_arg.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/group.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/types.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/user.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/signature/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/aiohttp/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/async_listeners.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/connection.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/frame_header.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/internals.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/interval_runner.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/listeners.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/__pycache__/messages.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/request.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/websocket_client/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/socket_mode/websockets/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/__pycache__/version.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_base_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_chat_stream.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_slack_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/base_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/chat_stream.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/deprecation.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/file_upload_v2_result.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_base_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_slack_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/web/__pycache__/slack_response.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/__init__.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/async_client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/client.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/internal_utils.cpython-313.pyc",
+    "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/webhook_response.cpython-313.pyc"
+  ],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": [
+      {
+        "_path": "site-packages/slack/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c9c78f3f629c1b581d29fe00bf777dd4edc652262c63a230b136f319addef6c5",
+        "size_in_bytes": 578,
+        "sha256_in_prefix": "c9c78f3f629c1b581d29fe00bf777dd4edc652262c63a230b136f319addef6c5"
+      },
+      {
+        "_path": "site-packages/slack/deprecation.py",
+        "path_type": "hardlink",
+        "sha256": "b264671191be6053fd3423c0ddfa782b7860d6a9298f84d4d808fc184487f5a8",
+        "size_in_bytes": 423,
+        "sha256_in_prefix": "b264671191be6053fd3423c0ddfa782b7860d6a9298f84d4d808fc184487f5a8"
+      },
+      {
+        "_path": "site-packages/slack/errors.py",
+        "path_type": "hardlink",
+        "sha256": "8047e5dbb080d848cb3ef5869d7c75d0b15e39dd39b7ad3e6e511f5e64560a6a",
+        "size_in_bytes": 432,
+        "sha256_in_prefix": "8047e5dbb080d848cb3ef5869d7c75d0b15e39dd39b7ad3e6e511f5e64560a6a"
+      },
+      {
+        "_path": "site-packages/slack/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/slack/rtm/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1480a322ab70b6a5da7b5e5ccb942c2e1f9718a6f780a90ceb28f89a6085f1ee",
+        "size_in_bytes": 209,
+        "sha256_in_prefix": "1480a322ab70b6a5da7b5e5ccb942c2e1f9718a6f780a90ceb28f89a6085f1ee"
+      },
+      {
+        "_path": "site-packages/slack/rtm/client.py",
+        "path_type": "hardlink",
+        "sha256": "d615fcf6bf885cd747d4bb1dcf01f1b464f5c312d7c477bbdbf0e06285cca799",
+        "size_in_bytes": 212,
+        "sha256_in_prefix": "d615fcf6bf885cd747d4bb1dcf01f1b464f5c312d7c477bbdbf0e06285cca799"
+      },
+      {
+        "_path": "site-packages/slack/signature/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b93d97ba2b682247abe441ae9d6c73924aea5fe611a54da3a1a80103cf709dee",
+        "size_in_bytes": 148,
+        "sha256_in_prefix": "b93d97ba2b682247abe441ae9d6c73924aea5fe611a54da3a1a80103cf709dee"
+      },
+      {
+        "_path": "site-packages/slack/signature/verifier.py",
+        "path_type": "hardlink",
+        "sha256": "19a73bfb9a205c76925ae1fb58b98b8989763b80ce855d12f50230d88306ee6b",
+        "size_in_bytes": 2361,
+        "sha256_in_prefix": "19a73bfb9a205c76925ae1fb58b98b8989763b80ce855d12f50230d88306ee6b"
+      },
+      {
+        "_path": "site-packages/slack/version.py",
+        "path_type": "hardlink",
+        "sha256": "26e432ee74925dfe9f4d7febd64959636482d4e7b2671810b9954722799586cd",
+        "size_in_bytes": 50,
+        "sha256_in_prefix": "26e432ee74925dfe9f4d7febd64959636482d4e7b2671810b9954722799586cd"
+      },
+      {
+        "_path": "site-packages/slack/web/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "fafa2d87865d3d586e721eb854a4d973c7000ce3a37f93f7d62ce9f325017966",
+        "size_in_bytes": 605,
+        "sha256_in_prefix": "fafa2d87865d3d586e721eb854a4d973c7000ce3a37f93f7d62ce9f325017966"
+      },
+      {
+        "_path": "site-packages/slack/web/async_base_client.py",
+        "path_type": "hardlink",
+        "sha256": "f1de802cb960f66f42ca5738e4873f68b7f03d672fedb446ff05dc9bfa05df90",
+        "size_in_bytes": 5792,
+        "sha256_in_prefix": "f1de802cb960f66f42ca5738e4873f68b7f03d672fedb446ff05dc9bfa05df90"
+      },
+      {
+        "_path": "site-packages/slack/web/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "456d4d791f98aeeb8cf274f41f2bcffb4d55ddd74f47561702ce24c0d6864a53",
+        "size_in_bytes": 549,
+        "sha256_in_prefix": "456d4d791f98aeeb8cf274f41f2bcffb4d55ddd74f47561702ce24c0d6864a53"
+      },
+      {
+        "_path": "site-packages/slack/web/async_internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "a234082df774c4e1dd78aa588aaab86911e8c73fb3e5ea7bd52e6d83b5e57e52",
+        "size_in_bytes": 6039,
+        "sha256_in_prefix": "a234082df774c4e1dd78aa588aaab86911e8c73fb3e5ea7bd52e6d83b5e57e52"
+      },
+      {
+        "_path": "site-packages/slack/web/async_slack_response.py",
+        "path_type": "hardlink",
+        "sha256": "aeaf539aee30f19043ea7e4d942ccb3dff26894aa675b6c406293e5454d30973",
+        "size_in_bytes": 6227,
+        "sha256_in_prefix": "aeaf539aee30f19043ea7e4d942ccb3dff26894aa675b6c406293e5454d30973"
+      },
+      {
+        "_path": "site-packages/slack/web/base_client.py",
+        "path_type": "hardlink",
+        "sha256": "77cd321091018ec25791692fa48bd4c2e7abfbdd0cce2b16facb9f10c066fc94",
+        "size_in_bytes": 20194,
+        "sha256_in_prefix": "77cd321091018ec25791692fa48bd4c2e7abfbdd0cce2b16facb9f10c066fc94"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2eac27e3e19ee8785cc1e3e59d89c7846f2a95327373f141a3e69b6c5f9f3deb",
+        "size_in_bytes": 397,
+        "sha256_in_prefix": "2eac27e3e19ee8785cc1e3e59d89c7846f2a95327373f141a3e69b6c5f9f3deb"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/actions.py",
+        "path_type": "hardlink",
+        "sha256": "77862ea074561d526e6e1cfd7954adfb640279afb82eb7e84e13e6265c4bca90",
+        "size_in_bytes": 716,
+        "sha256_in_prefix": "77862ea074561d526e6e1cfd7954adfb640279afb82eb7e84e13e6265c4bca90"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/attachments.py",
+        "path_type": "hardlink",
+        "sha256": "2189aad5a0bf3c73cd8d0151061d7da5026e5bc6a8feaef29d2c98f668629a32",
+        "size_in_bytes": 422,
+        "sha256_in_prefix": "2189aad5a0bf3c73cd8d0151061d7da5026e5bc6a8feaef29d2c98f668629a32"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/blocks.py",
+        "path_type": "hardlink",
+        "sha256": "4ab48ad944ca2b540ec5d6429b0e2f6711184917bd167bad4836bf0623fecb4f",
+        "size_in_bytes": 645,
+        "sha256_in_prefix": "4ab48ad944ca2b540ec5d6429b0e2f6711184917bd167bad4836bf0623fecb4f"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/dialog_elements.py",
+        "path_type": "hardlink",
+        "sha256": "1de187d814caa2fe658a10203873f746f21a2f303dc62a6249d9d1ef3eb02a7b",
+        "size_in_bytes": 750,
+        "sha256_in_prefix": "1de187d814caa2fe658a10203873f746f21a2f303dc62a6249d9d1ef3eb02a7b"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/dialogs.py",
+        "path_type": "hardlink",
+        "sha256": "31d2b9c3a043b266c22f7268e68ed1b86b930e5ef83f25017be3c0df34349ccf",
+        "size_in_bytes": 154,
+        "sha256_in_prefix": "31d2b9c3a043b266c22f7268e68ed1b86b930e5ef83f25017be3c0df34349ccf"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/elements.py",
+        "path_type": "hardlink",
+        "sha256": "f2a69410b08dde59b125593fab4fd54f03dbd43d10acaab7d837104eb9d6f688",
+        "size_in_bytes": 1836,
+        "sha256_in_prefix": "f2a69410b08dde59b125593fab4fd54f03dbd43d10acaab7d837104eb9d6f688"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/interactions.py",
+        "path_type": "hardlink",
+        "sha256": "04a2ed2c0620f47a727037135574fac28234ee6f69170f92edb2025e6a6469f9",
+        "size_in_bytes": 4495,
+        "sha256_in_prefix": "04a2ed2c0620f47a727037135574fac28234ee6f69170f92edb2025e6a6469f9"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/messages.py",
+        "path_type": "hardlink",
+        "sha256": "539477ee8eeb0221b9b6cfae76c9372eb0fd0a291e96d434ffb5853954371d4d",
+        "size_in_bytes": 62,
+        "sha256_in_prefix": "539477ee8eeb0221b9b6cfae76c9372eb0fd0a291e96d434ffb5853954371d4d"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/objects.py",
+        "path_type": "hardlink",
+        "sha256": "e34f875f699d965ed0c4632b8203e93cecd20f3a069599d6d64c0dd07710af95",
+        "size_in_bytes": 909,
+        "sha256_in_prefix": "e34f875f699d965ed0c4632b8203e93cecd20f3a069599d6d64c0dd07710af95"
+      },
+      {
+        "_path": "site-packages/slack/web/classes/views.py",
+        "path_type": "hardlink",
+        "sha256": "967956ea349db1bda6a4a09c592a2307f8994e0b926ce384caefb7c4b8b396b6",
+        "size_in_bytes": 252,
+        "sha256_in_prefix": "967956ea349db1bda6a4a09c592a2307f8994e0b926ce384caefb7c4b8b396b6"
+      },
+      {
+        "_path": "site-packages/slack/web/client.py",
+        "path_type": "hardlink",
+        "sha256": "98897d9c4490f9bd5a8cc737f3155a0b37d4ae80ed6dd0ff7218fef3ed720aa4",
+        "size_in_bytes": 167,
+        "sha256_in_prefix": "98897d9c4490f9bd5a8cc737f3155a0b37d4ae80ed6dd0ff7218fef3ed720aa4"
+      },
+      {
+        "_path": "site-packages/slack/web/deprecation.py",
+        "path_type": "hardlink",
+        "sha256": "141bddb5d9319fe2857f2a18b66788272ed13e81a71e80635ed7b030a6f52404",
+        "size_in_bytes": 978,
+        "sha256_in_prefix": "141bddb5d9319fe2857f2a18b66788272ed13e81a71e80635ed7b030a6f52404"
+      },
+      {
+        "_path": "site-packages/slack/web/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "53d346b127981894f154197d63bf11697237a0382eca937339d5aa50257e8692",
+        "size_in_bytes": 1635,
+        "sha256_in_prefix": "53d346b127981894f154197d63bf11697237a0382eca937339d5aa50257e8692"
+      },
+      {
+        "_path": "site-packages/slack/web/slack_response.py",
+        "path_type": "hardlink",
+        "sha256": "2276ee4e93d20ccee67bb4b5c038baf90443158b55fcff3745290b81b3cf04ef",
+        "size_in_bytes": 200,
+        "sha256_in_prefix": "2276ee4e93d20ccee67bb4b5c038baf90443158b55fcff3745290b81b3cf04ef"
+      },
+      {
+        "_path": "site-packages/slack/webhook/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ad5814887c7f3696da28e99b653d6039ba5fdcd26f9304de302273d4b7212022",
+        "size_in_bytes": 288,
+        "sha256_in_prefix": "ad5814887c7f3696da28e99b653d6039ba5fdcd26f9304de302273d4b7212022"
+      },
+      {
+        "_path": "site-packages/slack/webhook/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "d46c709166aadfe994eff5f227a48bd824ffbcdd406d1377a2a757f2e9890ffa",
+        "size_in_bytes": 4471,
+        "sha256_in_prefix": "d46c709166aadfe994eff5f227a48bd824ffbcdd406d1377a2a757f2e9890ffa"
+      },
+      {
+        "_path": "site-packages/slack/webhook/client.py",
+        "path_type": "hardlink",
+        "sha256": "355f118507fa03df45e05b75fe19427f57fabfeb18a9fdc906d571d6764207f2",
+        "size_in_bytes": 4537,
+        "sha256_in_prefix": "355f118507fa03df45e05b75fe19427f57fabfeb18a9fdc906d571d6764207f2"
+      },
+      {
+        "_path": "site-packages/slack/webhook/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "409febac78b8cc579f996b26e159287c942741c46e345aaa3fdfba3ce1c2dca5",
+        "size_in_bytes": 1223,
+        "sha256_in_prefix": "409febac78b8cc579f996b26e159287c942741c46e345aaa3fdfba3ce1c2dca5"
+      },
+      {
+        "_path": "site-packages/slack/webhook/webhook_response.py",
+        "path_type": "hardlink",
+        "sha256": "3058bb4533ce9b0f0d6aa09fe56218793012bb482b75be170ac30796edd7f37d",
+        "size_in_bytes": 281,
+        "sha256_in_prefix": "3058bb4533ce9b0f0d6aa09fe56218793012bb482b75be170ac30796edd7f37d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "a78f6b0fa7e128c107687d4d6dd7d963b27e27f78dbb3abcab05c7227ee7f8e8",
+        "size_in_bytes": 1469,
+        "sha256_in_prefix": "a78f6b0fa7e128c107687d4d6dd7d963b27e27f78dbb3abcab05c7227ee7f8e8"
+      },
+      {
+        "_path": "site-packages/slack_sdk/aiohttp_version_checker.py",
+        "path_type": "hardlink",
+        "sha256": "e86ba98270bf34d36ddeb3c825939a35b029fe3ba448a214381b26c74718d88d",
+        "size_in_bytes": 929,
+        "sha256_in_prefix": "e86ba98270bf34d36ddeb3c825939a35b029fe3ba448a214381b26c74718d88d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e83fdc83818d891469da37a52fcb13efaf4dcdd454e378b2dc4bf0358eee1e33",
+        "size_in_bytes": 337,
+        "sha256_in_prefix": "e83fdc83818d891469da37a52fcb13efaf4dcdd454e378b2dc4bf0358eee1e33"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "e08a020c3ec48d61f9923fd65bd088afe870d01be4aa7ebd49f9868b797138e6",
+        "size_in_bytes": 93,
+        "sha256_in_prefix": "e08a020c3ec48d61f9923fd65bd088afe870d01be4aa7ebd49f9868b797138e6"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e29a234afc032cb461cb68bc94eb0f0e45410383a8319038a705b65a409a9600",
+        "size_in_bytes": 191,
+        "sha256_in_prefix": "e29a234afc032cb461cb68bc94eb0f0e45410383a8319038a705b65a409a9600"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "659efd9efa77116c61c3c128646662a9f1fe391bb50b0a4f65267149b92e8934",
+        "size_in_bytes": 14728,
+        "sha256_in_prefix": "659efd9efa77116c61c3c128646662a9f1fe391bb50b0a4f65267149b92e8934"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/client.py",
+        "path_type": "hardlink",
+        "sha256": "b4d4bb98c06e4153d5034296a8d71c7c8f8141da48bd7c320dd0d098e72ce6ab",
+        "size_in_bytes": 14586,
+        "sha256_in_prefix": "b4d4bb98c06e4153d5034296a8d71c7c8f8141da48bd7c320dd0d098e72ce6ab"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "85326c9e9e22cb6f3fa1f66ab2227dcec834d68139a8578990ff62bb05c7a3f5",
+        "size_in_bytes": 1342,
+        "sha256_in_prefix": "85326c9e9e22cb6f3fa1f66ab2227dcec834d68139a8578990ff62bb05c7a3f5"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/logs.py",
+        "path_type": "hardlink",
+        "sha256": "dcb9af65d238a351580666dfbdce5ba5f4358738d08be341a6d5fa1d7833dffa",
+        "size_in_bytes": 41665,
+        "sha256_in_prefix": "dcb9af65d238a351580666dfbdce5ba5f4358738d08be341a6d5fa1d7833dffa"
+      },
+      {
+        "_path": "site-packages/slack_sdk/audit_logs/v1/response.py",
+        "path_type": "hardlink",
+        "sha256": "0c2a1fc434afbfc266d0d8d8105d3c640edc5a026ced9e6b38fac250c1f8d955",
+        "size_in_bytes": 952,
+        "sha256_in_prefix": "0c2a1fc434afbfc266d0d8d8105d3c640edc5a026ced9e6b38fac250c1f8d955"
+      },
+      {
+        "_path": "site-packages/slack_sdk/errors/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f188f4256ed9193c78467c8f8f0e7f4a507403ab604e0c5621e5173c3e334f16",
+        "size_in_bytes": 1908,
+        "sha256_in_prefix": "f188f4256ed9193c78467c8f8f0e7f4a507403ab604e0c5621e5173c3e334f16"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "478b6e2353c9e52495facc32a1b06f6c777960607e2a4e39c147266bf12f1af8",
+        "size_in_bytes": 1256,
+        "sha256_in_prefix": "478b6e2353c9e52495facc32a1b06f6c777960607e2a4e39c147266bf12f1af8"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/async_handler.py",
+        "path_type": "hardlink",
+        "sha256": "fb543304c3b2a9f944e0edf4784cf3c51122277862d8dc48d72ef251675453aa",
+        "size_in_bytes": 2657,
+        "sha256_in_prefix": "fb543304c3b2a9f944e0edf4784cf3c51122277862d8dc48d72ef251675453aa"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/builtin_async_handlers.py",
+        "path_type": "hardlink",
+        "sha256": "11c7a248afc6a001b2c47530cd8889324b6fd95481965c7b72f9f002d6f4c2c7",
+        "size_in_bytes": 3729,
+        "sha256_in_prefix": "11c7a248afc6a001b2c47530cd8889324b6fd95481965c7b72f9f002d6f4c2c7"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/builtin_handlers.py",
+        "path_type": "hardlink",
+        "sha256": "95a5e0fb23556556f929a10d5fc9c346b1a288fa853986e730b9105cca84248a",
+        "size_in_bytes": 3605,
+        "sha256_in_prefix": "95a5e0fb23556556f929a10d5fc9c346b1a288fa853986e730b9105cca84248a"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/builtin_interval_calculators.py",
+        "path_type": "hardlink",
+        "sha256": "1c834c0896e9df768f0fd338e09c7fb96dc7a23c8e0261df3fd4b43a9591468c",
+        "size_in_bytes": 1622,
+        "sha256_in_prefix": "1c834c0896e9df768f0fd338e09c7fb96dc7a23c8e0261df3fd4b43a9591468c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/handler.py",
+        "path_type": "hardlink",
+        "sha256": "ea27aee6a58bf0b4d49f096c83600adeac76ce465c85c32005c4c2481f20534f",
+        "size_in_bytes": 2465,
+        "sha256_in_prefix": "ea27aee6a58bf0b4d49f096c83600adeac76ce465c85c32005c4c2481f20534f"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/interval_calculator.py",
+        "path_type": "hardlink",
+        "sha256": "0aac82e2cc938a67ff18678cc16a77bc31d4b7e7d771b56a0fae9134e969b63c",
+        "size_in_bytes": 450,
+        "sha256_in_prefix": "0aac82e2cc938a67ff18678cc16a77bc31d4b7e7d771b56a0fae9134e969b63c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/jitter.py",
+        "path_type": "hardlink",
+        "sha256": "adf857331178822d234269d271414504a65bec2ffc4b84bac78d94ed1b442ee3",
+        "size_in_bytes": 597,
+        "sha256_in_prefix": "adf857331178822d234269d271414504a65bec2ffc4b84bac78d94ed1b442ee3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/request.py",
+        "path_type": "hardlink",
+        "sha256": "98292ef26ef7674cf6327cb7f8a2d988a0a50b635c175cf39fb0f4759ab3e87d",
+        "size_in_bytes": 1087,
+        "sha256_in_prefix": "98292ef26ef7674cf6327cb7f8a2d988a0a50b635c175cf39fb0f4759ab3e87d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/response.py",
+        "path_type": "hardlink",
+        "sha256": "13ee1bc05980283f5861d9f465a8734d219b0412b80e124f41f21ed52a71d7e3",
+        "size_in_bytes": 651,
+        "sha256_in_prefix": "13ee1bc05980283f5861d9f465a8734d219b0412b80e124f41f21ed52a71d7e3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/http_retry/state.py",
+        "path_type": "hardlink",
+        "sha256": "f0879f74192497c38089bcc43a3c089982837deb21bcd7a50c5754a7b260ba70",
+        "size_in_bytes": 570,
+        "sha256_in_prefix": "f0879f74192497c38089bcc43a3c089982837deb21bcd7a50c5754a7b260ba70"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0bbb8b2cc733b547e0ed21e73f7af26ac5d9110ba16a84fb57e94ffc01ae11de",
+        "size_in_bytes": 2034,
+        "sha256_in_prefix": "0bbb8b2cc733b547e0ed21e73f7af26ac5d9110ba16a84fb57e94ffc01ae11de"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/attachments/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "2f4f508db165dfbc04b45915e4a6c21b992446ca2e9dd80940123b6b9689b3d0",
+        "size_in_bytes": 25073,
+        "sha256_in_prefix": "2f4f508db165dfbc04b45915e4a6c21b992446ca2e9dd80940123b6b9689b3d0"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/basic_objects.py",
+        "path_type": "hardlink",
+        "sha256": "ac3a3bdf91a8b305c30db83f93a52a288aba743e36cfe3affb64d5f4e8f6c586",
+        "size_in_bytes": 4821,
+        "sha256_in_prefix": "ac3a3bdf91a8b305c30db83f93a52a288aba743e36cfe3affb64d5f4e8f6c586"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/blocks/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0c8449d3d066746ccf1bbc7a7d318efcea3f7d745369da24f23369a8800386ca",
+        "size_in_bytes": 3411,
+        "sha256_in_prefix": "0c8449d3d066746ccf1bbc7a7d318efcea3f7d745369da24f23369a8800386ca"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/blocks/basic_components.py",
+        "path_type": "hardlink",
+        "sha256": "e73d8004195b83abd4d498ba009c1bbf6782f65bafda1a254332169573808ac6",
+        "size_in_bytes": 26521,
+        "sha256_in_prefix": "e73d8004195b83abd4d498ba009c1bbf6782f65bafda1a254332169573808ac6"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/blocks/block_elements.py",
+        "path_type": "hardlink",
+        "sha256": "e339cfa54badf4b329ac306414c294fb559575ef93dcc21f18c30ef7a94010dd",
+        "size_in_bytes": 100247,
+        "sha256_in_prefix": "e339cfa54badf4b329ac306414c294fb559575ef93dcc21f18c30ef7a94010dd"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/blocks/blocks.py",
+        "path_type": "hardlink",
+        "sha256": "51c050f4586b2d1a30afea3315a71cff0811d8a021fd745a6724bb881d5be971",
+        "size_in_bytes": 36661,
+        "sha256_in_prefix": "51c050f4586b2d1a30afea3315a71cff0811d8a021fd745a6724bb881d5be971"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/dialoags.py",
+        "path_type": "hardlink",
+        "sha256": "ef7ccc9f6ec2b204c59415c10ea85c0b7fcfb63b70fd991396b5249d4718c69b",
+        "size_in_bytes": 1034,
+        "sha256_in_prefix": "ef7ccc9f6ec2b204c59415c10ea85c0b7fcfb63b70fd991396b5249d4718c69b"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/dialogs/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ca25c09b37bacbdebd52b86ba81992f069711c0123eaa5b4e96e1e7366b4dc84",
+        "size_in_bytes": 33092,
+        "sha256_in_prefix": "ca25c09b37bacbdebd52b86ba81992f069711c0123eaa5b4e96e1e7366b4dc84"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/messages/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f92cbe990f7de7f0a7da831c67dfdfb7801cd5d2971833eb1b7ad4767f5229f4",
+        "size_in_bytes": 2772,
+        "sha256_in_prefix": "f92cbe990f7de7f0a7da831c67dfdfb7801cd5d2971833eb1b7ad4767f5229f4"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/messages/chunk.py",
+        "path_type": "hardlink",
+        "sha256": "198149dfa5241be61f09c773965560f4054f56596371fe53a9753d0e5a3e36f8",
+        "size_in_bytes": 3721,
+        "sha256_in_prefix": "198149dfa5241be61f09c773965560f4054f56596371fe53a9753d0e5a3e36f8"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/messages/message.py",
+        "path_type": "hardlink",
+        "sha256": "0f8cb80e73313f4d6f900064f615382cdfacb45c85f922e6535fe84ee42637fe",
+        "size_in_bytes": 2906,
+        "sha256_in_prefix": "0f8cb80e73313f4d6f900064f615382cdfacb45c85f922e6535fe84ee42637fe"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/metadata/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0e410e2a9de91fe60c803cdc6395eb80bfd81f56ca9bf79039aa0b5344323a0a",
+        "size_in_bytes": 33300,
+        "sha256_in_prefix": "0e410e2a9de91fe60c803cdc6395eb80bfd81f56ca9bf79039aa0b5344323a0a"
+      },
+      {
+        "_path": "site-packages/slack_sdk/models/views/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6e0df3b0f16237575196db8bd84eb8b5c99b4be3d9b540d10d6af473e9e3a54e",
+        "size_in_bytes": 8932,
+        "sha256_in_prefix": "6e0df3b0f16237575196db8bd84eb8b5c99b4be3d9b540d10d6af473e9e3a54e"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e1c2c76affcf4b030d94ac11895af8a5a8830f4b8bdaf631dd8c5139953f3c8c",
+        "size_in_bytes": 622,
+        "sha256_in_prefix": "e1c2c76affcf4b030d94ac11895af8a5a8830f4b8bdaf631dd8c5139953f3c8c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/authorize_url_generator/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "daddd248dcad9ebcd2f1399238ce9e961d028792e9ebcd199dbc507080062fba",
+        "size_in_bytes": 2227,
+        "sha256_in_prefix": "daddd248dcad9ebcd2f1399238ce9e961d028792e9ebcd199dbc507080062fba"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "447710cf0ae6c3b3993f56e7ef372e068383a2e41a0ba50daf6dee32710a2da0",
+        "size_in_bytes": 228,
+        "sha256_in_prefix": "447710cf0ae6c3b3993f56e7ef372e068383a2e41a0ba50daf6dee32710a2da0"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/amazon_s3/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "62b258f788b7abf62eeaed93919d2a83285228062ff7bfedab85fd8b90f383cb",
+        "size_in_bytes": 14054,
+        "sha256_in_prefix": "62b258f788b7abf62eeaed93919d2a83285228062ff7bfedab85fd8b90f383cb"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/async_cacheable_installation_store.py",
+        "path_type": "hardlink",
+        "sha256": "96c49567e88774f249154d174a97d95f65c884209995ab32e793655ddb6f18c3",
+        "size_in_bytes": 4751,
+        "sha256_in_prefix": "96c49567e88774f249154d174a97d95f65c884209995ab32e793655ddb6f18c3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/async_installation_store.py",
+        "path_type": "hardlink",
+        "sha256": "9274b27b06efe7df5229520c7b993c3aedc5cb2b28cbc1522b0bc568edd1d785",
+        "size_in_bytes": 2973,
+        "sha256_in_prefix": "9274b27b06efe7df5229520c7b993c3aedc5cb2b28cbc1522b0bc568edd1d785"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/cacheable_installation_store.py",
+        "path_type": "hardlink",
+        "sha256": "428b56799495178440d9e64043043c34f1603666f165f071663aa12cc28f6b61",
+        "size_in_bytes": 4546,
+        "sha256_in_prefix": "428b56799495178440d9e64043043c34f1603666f165f071663aa12cc28f6b61"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/file/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1765ead9ed0bbc842149a60651244d123075e734ad8bd8b82f77ae66da3e44fa",
+        "size_in_bytes": 9853,
+        "sha256_in_prefix": "1765ead9ed0bbc842149a60651244d123075e734ad8bd8b82f77ae66da3e44fa"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/installation_store.py",
+        "path_type": "hardlink",
+        "sha256": "63a826632152d734d653b167d5de6f807bfc669012a80c65bd9fe03a6a0ed8bf",
+        "size_in_bytes": 2902,
+        "sha256_in_prefix": "63a826632152d734d653b167d5de6f807bfc669012a80c65bd9fe03a6a0ed8bf"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/internals.py",
+        "path_type": "hardlink",
+        "sha256": "7a05becaffd406ae21323156c035129e11deab3224fbee574ce334e7f0819ebf",
+        "size_in_bytes": 1297,
+        "sha256_in_prefix": "7a05becaffd406ae21323156c035129e11deab3224fbee574ce334e7f0819ebf"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/models/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "33416375b749fe3722d5d6e8410d82dc410bff84206c04d22f2e8f331c5a8322",
+        "size_in_bytes": 106,
+        "sha256_in_prefix": "33416375b749fe3722d5d6e8410d82dc410bff84206c04d22f2e8f331c5a8322"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/models/bot.py",
+        "path_type": "hardlink",
+        "sha256": "12eff185dbfd27a64427db09cc9520b4e8d27649b7fc607be81a73d3a6962d84",
+        "size_in_bytes": 4368,
+        "sha256_in_prefix": "12eff185dbfd27a64427db09cc9520b4e8d27649b7fc607be81a73d3a6962d84"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/models/installation.py",
+        "path_type": "hardlink",
+        "sha256": "1637f09eead3821474e5c9ae766f0934c33cf715b3fbefab92ce44ee6b6a2b8c",
+        "size_in_bytes": 8694,
+        "sha256_in_prefix": "1637f09eead3821474e5c9ae766f0934c33cf715b3fbefab92ce44ee6b6a2b8c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/sqlalchemy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "07976c4934b10a97de6be66ee0206f0abe3458bc84ca14a1368243ca369f6522",
+        "size_in_bytes": 24529,
+        "sha256_in_prefix": "07976c4934b10a97de6be66ee0206f0abe3458bc84ca14a1368243ca369f6522"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/installation_store/sqlite3/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6e8a096eda19c203dbb313e4bc9935fec419f4280041488747c12bbfdb8b3547",
+        "size_in_bytes": 22403,
+        "sha256_in_prefix": "6e8a096eda19c203dbb313e4bc9935fec419f4280041488747c12bbfdb8b3547"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/redirect_uri_page_renderer/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1c1b256af8d98e306a9f61f87afed131e7540b4e879eacb798079a7737f6fed2",
+        "size_in_bytes": 2018,
+        "sha256_in_prefix": "1c1b256af8d98e306a9f61f87afed131e7540b4e879eacb798079a7737f6fed2"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/sqlalchemy_utils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1ea47b9e00a3985394eb5bee9081e57ec779478ad85aed8df772541f741346fe",
+        "size_in_bytes": 1243,
+        "sha256_in_prefix": "1ea47b9e00a3985394eb5bee9081e57ec779478ad85aed8df772541f741346fe"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "bb1e9af98af8d8519153a8f00faa8ae858e89793e6a00eb1108400c3d38c8bda",
+        "size_in_bytes": 321,
+        "sha256_in_prefix": "bb1e9af98af8d8519153a8f00faa8ae858e89793e6a00eb1108400c3d38c8bda"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/amazon_s3/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "6fbc8d4960ac0da592a0ce594d42e4ec464630a617bf6e9e16a385a4d3cee4b2",
+        "size_in_bytes": 2259,
+        "sha256_in_prefix": "6fbc8d4960ac0da592a0ce594d42e4ec464630a617bf6e9e16a385a4d3cee4b2"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/async_state_store.py",
+        "path_type": "hardlink",
+        "sha256": "1de3015fea507c611c7d406253d5638cfed3454b2077f2570e0479e790c13321",
+        "size_in_bytes": 325,
+        "sha256_in_prefix": "1de3015fea507c611c7d406253d5638cfed3454b2077f2570e0479e790c13321"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/file/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "66b4eba7cbd6238c9499327b3f670ec101a49635d19389f60e30580d968c5e1d",
+        "size_in_bytes": 2220,
+        "sha256_in_prefix": "66b4eba7cbd6238c9499327b3f670ec101a49635d19389f60e30580d968c5e1d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/sqlalchemy/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "175f281c6a81c5e1226c36ee4951e245e42a8ddac65b55295fc13a977cd04a64",
+        "size_in_bytes": 5556,
+        "sha256_in_prefix": "175f281c6a81c5e1226c36ee4951e245e42a8ddac65b55295fc13a977cd04a64"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/sqlite3/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "ca2efae8e3462949215753968480cf9681d5f171d610c4331830eb7188447ba3",
+        "size_in_bytes": 3304,
+        "sha256_in_prefix": "ca2efae8e3462949215753968480cf9681d5f171d610c4331830eb7188447ba3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_store/state_store.py",
+        "path_type": "hardlink",
+        "sha256": "e1d5bc31354fd40635c01f284cef1fb64397098c351d5bb520b00af89d85b421",
+        "size_in_bytes": 296,
+        "sha256_in_prefix": "e1d5bc31354fd40635c01f284cef1fb64397098c351d5bb520b00af89d85b421"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/state_utils/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "184d8aa8b713d5dbf51e42fff480fae3e65aea3a203616ee60c936bd5097addb",
+        "size_in_bytes": 1574,
+        "sha256_in_prefix": "184d8aa8b713d5dbf51e42fff480fae3e65aea3a203616ee60c936bd5097addb"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/token_rotation/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "0ca5e0b2b3a3ce971ecbb6b299e1b2519bbf670a2a0dca4778e62f557eafa4e7",
+        "size_in_bytes": 69,
+        "sha256_in_prefix": "0ca5e0b2b3a3ce971ecbb6b299e1b2519bbf670a2a0dca4778e62f557eafa4e7"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/token_rotation/async_rotator.py",
+        "path_type": "hardlink",
+        "sha256": "1b72b4007712c1a852eb708c39db71e429ba15bd90cfcc09cc0e06325324fbd9",
+        "size_in_bytes": 5269,
+        "sha256_in_prefix": "1b72b4007712c1a852eb708c39db71e429ba15bd90cfcc09cc0e06325324fbd9"
+      },
+      {
+        "_path": "site-packages/slack_sdk/oauth/token_rotation/rotator.py",
+        "path_type": "hardlink",
+        "sha256": "08c6babbd93b540e1f33e4d014145f8d732f224dff046243480557fd2e37e86f",
+        "size_in_bytes": 5088,
+        "sha256_in_prefix": "08c6babbd93b540e1f33e4d014145f8d732f224dff046243480557fd2e37e86f"
+      },
+      {
+        "_path": "site-packages/slack_sdk/proxy_env_variable_loader.py",
+        "path_type": "hardlink",
+        "sha256": "f916c717e6f8adc4df4974956c5e18663b7a56644db324c374188a6ec3d22a58",
+        "size_in_bytes": 822,
+        "sha256_in_prefix": "f916c717e6f8adc4df4974956c5e18663b7a56644db324c374188a6ec3d22a58"
+      },
+      {
+        "_path": "site-packages/slack_sdk/py.typed",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/slack_sdk/rtm/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "54c2892807f56f9ddaca78eeebbad4a8131a83568ef72916f555e9207f021653",
+        "size_in_bytes": 23515,
+        "sha256_in_prefix": "54c2892807f56f9ddaca78eeebbad4a8131a83568ef72916f555e9207f021653"
+      },
+      {
+        "_path": "site-packages/slack_sdk/rtm/v2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "c979c3ab5054c3ff8e9edd0a4d8b3daa87deb0e39f10e223469113d35a586696",
+        "size_in_bytes": 71,
+        "sha256_in_prefix": "c979c3ab5054c3ff8e9edd0a4d8b3daa87deb0e39f10e223469113d35a586696"
+      },
+      {
+        "_path": "site-packages/slack_sdk/rtm_v2/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "cf5dc9a605a75b5463ad250cf0cc8eba2c2c4f60aea5382ef342e72a899caa85",
+        "size_in_bytes": 16050,
+        "sha256_in_prefix": "cf5dc9a605a75b5463ad250cf0cc8eba2c2c4f60aea5382ef342e72a899caa85"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "21366c6d573e052e294100d57212810c339ad4f447a880ebd61d44504e249640",
+        "size_in_bytes": 730,
+        "sha256_in_prefix": "21366c6d573e052e294100d57212810c339ad4f447a880ebd61d44504e249640"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "3f793f1bf05bfe1ff331e89607bead8e10c31567c4d02055eb2928338f031d5e",
+        "size_in_bytes": 83,
+        "sha256_in_prefix": "3f793f1bf05bfe1ff331e89607bead8e10c31567c4d02055eb2928338f031d5e"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "954ac1b7f4cbd2c8d31c3171a868e189ed308c622a1a4481cc2b730b5e95e36b",
+        "size_in_bytes": 293,
+        "sha256_in_prefix": "954ac1b7f4cbd2c8d31c3171a868e189ed308c622a1a4481cc2b730b5e95e36b"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "5630bba2f43f63be39a58976ffadb40f507115e832180105a50272019017756a",
+        "size_in_bytes": 15243,
+        "sha256_in_prefix": "5630bba2f43f63be39a58976ffadb40f507115e832180105a50272019017756a"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/client.py",
+        "path_type": "hardlink",
+        "sha256": "32fe4d45d522f1d850d10f40865c49d57177fa10e86f65a234cdaefb210adae6",
+        "size_in_bytes": 15853,
+        "sha256_in_prefix": "32fe4d45d522f1d850d10f40865c49d57177fa10e86f65a234cdaefb210adae6"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/default_arg.py",
+        "path_type": "hardlink",
+        "sha256": "4c7944a5d3b8e21c1bf565e59bdd412167c4aeb2bb8d107c58ab985dc2904f67",
+        "size_in_bytes": 53,
+        "sha256_in_prefix": "4c7944a5d3b8e21c1bf565e59bdd412167c4aeb2bb8d107c58ab985dc2904f67"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/group.py",
+        "path_type": "hardlink",
+        "sha256": "346fc9ba133f62fe5ae2ead8012a0c742daf1e224eeb7d6cf2d2c208a105e5c5",
+        "size_in_bytes": 2474,
+        "sha256_in_prefix": "346fc9ba133f62fe5ae2ead8012a0c742daf1e224eeb7d6cf2d2c208a105e5c5"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "8784aa8e39b97fc95eb561296644e1be4575daae2dc561b9fb16289d08f8f4e0",
+        "size_in_bytes": 4775,
+        "sha256_in_prefix": "8784aa8e39b97fc95eb561296644e1be4575daae2dc561b9fb16289d08f8f4e0"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/response.py",
+        "path_type": "hardlink",
+        "sha256": "bdbafc2c7ba52d8764ef65a9e29d5209bb8965c2f3ba26dbe540e4a6bbad1f71",
+        "size_in_bytes": 7608,
+        "sha256_in_prefix": "bdbafc2c7ba52d8764ef65a9e29d5209bb8965c2f3ba26dbe540e4a6bbad1f71"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/types.py",
+        "path_type": "hardlink",
+        "sha256": "dcaf67de27a457f1cd6c7cdd95f5cc7df4a8adcc4df745cafa5f76bbc77d12ab",
+        "size_in_bytes": 798,
+        "sha256_in_prefix": "dcaf67de27a457f1cd6c7cdd95f5cc7df4a8adcc4df745cafa5f76bbc77d12ab"
+      },
+      {
+        "_path": "site-packages/slack_sdk/scim/v1/user.py",
+        "path_type": "hardlink",
+        "sha256": "2b0dd8cae9c9d55bcd7777a2bbbc1745c2f9a922d833f829ef07752641666799",
+        "size_in_bytes": 7932,
+        "sha256_in_prefix": "2b0dd8cae9c9d55bcd7777a2bbbc1745c2f9a922d833f829ef07752641666799"
+      },
+      {
+        "_path": "site-packages/slack_sdk/signature/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f297b4c2e058f5977749c5cc5c7fa735dd93abdcd014a93b173f137e6da8f1e0",
+        "size_in_bytes": 2439,
+        "sha256_in_prefix": "f297b4c2e058f5977749c5cc5c7fa735dd93abdcd014a93b173f137e6da8f1e0"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "105a596afcadc5355fa2b39420e7da6ecc284b5517362b384fe0262c710907cf",
+        "size_in_bytes": 371,
+        "sha256_in_prefix": "105a596afcadc5355fa2b39420e7da6ecc284b5517362b384fe0262c710907cf"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/aiohttp/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "b59460a986258a533600b5444ac84a4aa9376fb5d6a2ba7651afe012b1ab0539",
+        "size_in_bytes": 23153,
+        "sha256_in_prefix": "b59460a986258a533600b5444ac84a4aa9376fb5d6a2ba7651afe012b1ab0539"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "4bbfb776265530967d2f92d6d1c9d38ca18ae49a26efb122b5ac07879de518ba",
+        "size_in_bytes": 6912,
+        "sha256_in_prefix": "4bbfb776265530967d2f92d6d1c9d38ca18ae49a26efb122b5ac07879de518ba"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/async_listeners.py",
+        "path_type": "hardlink",
+        "sha256": "8eac9c6d3ea3124e2ad0edfa3833c177ed1abcfedeea75dd4e02d270e36430a4",
+        "size_in_bytes": 682,
+        "sha256_in_prefix": "8eac9c6d3ea3124e2ad0edfa3833c177ed1abcfedeea75dd4e02d270e36430a4"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/builtin/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "1221ad3f1ea8ba184e84b67d3e30355ef2bfbbd2af4e356cba90490786523369",
+        "size_in_bytes": 76,
+        "sha256_in_prefix": "1221ad3f1ea8ba184e84b67d3e30355ef2bfbbd2af4e356cba90490786523369"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/builtin/client.py",
+        "path_type": "hardlink",
+        "sha256": "a272c65d2943a5a8c3af4d9e8b4080ce1e025273187e88a75297c16a9e0e9bd3",
+        "size_in_bytes": 12598,
+        "sha256_in_prefix": "a272c65d2943a5a8c3af4d9e8b4080ce1e025273187e88a75297c16a9e0e9bd3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/builtin/connection.py",
+        "path_type": "hardlink",
+        "sha256": "b51871944d609e393a15d7fd2958ff8cf65b58e85e279ffcf013d8962d5d90fa",
+        "size_in_bytes": 21417,
+        "sha256_in_prefix": "b51871944d609e393a15d7fd2958ff8cf65b58e85e279ffcf013d8962d5d90fa"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/builtin/frame_header.py",
+        "path_type": "hardlink",
+        "sha256": "0b162ec6cad2b9b61c932a5b22bb94164669463f223b264c236a77423cf8c1d4",
+        "size_in_bytes": 1066,
+        "sha256_in_prefix": "0b162ec6cad2b9b61c932a5b22bb94164669463f223b264c236a77423cf8c1d4"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/builtin/internals.py",
+        "path_type": "hardlink",
+        "sha256": "37dab939f3d4f4d0019c87339aa1e82e496d66fbb7fb643800e5d3fc1824da7c",
+        "size_in_bytes": 15087,
+        "sha256_in_prefix": "37dab939f3d4f4d0019c87339aa1e82e496d66fbb7fb643800e5d3fc1824da7c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/client.py",
+        "path_type": "hardlink",
+        "sha256": "7720753660909046f60dd66c76da5487fdec56dd1f320dd777facd47d3852b32",
+        "size_in_bytes": 6069,
+        "sha256_in_prefix": "7720753660909046f60dd66c76da5487fdec56dd1f320dd777facd47d3852b32"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/interval_runner.py",
+        "path_type": "hardlink",
+        "sha256": "97434f3e5772c7a01cfc51608a70d569e6bb9413a6fad8785fe48b88f672058c",
+        "size_in_bytes": 907,
+        "sha256_in_prefix": "97434f3e5772c7a01cfc51608a70d569e6bb9413a6fad8785fe48b88f672058c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/listeners.py",
+        "path_type": "hardlink",
+        "sha256": "34ee4d8e2803a7bb8377a1dfbb299afad1e4a34e307414cefdc6111a690da813",
+        "size_in_bytes": 552,
+        "sha256_in_prefix": "34ee4d8e2803a7bb8377a1dfbb299afad1e4a34e307414cefdc6111a690da813"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/logger/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/logger/messages.py",
+        "path_type": "hardlink",
+        "sha256": "40471dc82efe9b056eacf6f06931cb780cd2e23ab438723fbf4c49fc444956df",
+        "size_in_bytes": 222,
+        "sha256_in_prefix": "40471dc82efe9b056eacf6f06931cb780cd2e23ab438723fbf4c49fc444956df"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/request.py",
+        "path_type": "hardlink",
+        "sha256": "1c94d6fe1d98a72706c048707aa93d01bceda405bd6568586af063f2cf506aad",
+        "size_in_bytes": 1970,
+        "sha256_in_prefix": "1c94d6fe1d98a72706c048707aa93d01bceda405bd6568586af063f2cf506aad"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/response.py",
+        "path_type": "hardlink",
+        "sha256": "bc08b57894bdbdbd46dae4f09a009ea73c7991276cfb910b4fab0d9930e6d949",
+        "size_in_bytes": 897,
+        "sha256_in_prefix": "bc08b57894bdbdbd46dae4f09a009ea73c7991276cfb910b4fab0d9930e6d949"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/websocket_client/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "4b3ab44ed59371e3fa2da10ebf692d13fcdec3d67a095154470f40740bc80e2d",
+        "size_in_bytes": 10957,
+        "sha256_in_prefix": "4b3ab44ed59371e3fa2da10ebf692d13fcdec3d67a095154470f40740bc80e2d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/socket_mode/websockets/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "35b6df5f1a099cd57a856a803cbc10539a2412d60808b153f0990c51db2e08e3",
+        "size_in_bytes": 12082,
+        "sha256_in_prefix": "35b6df5f1a099cd57a856a803cbc10539a2412d60808b153f0990c51db2e08e3"
+      },
+      {
+        "_path": "site-packages/slack_sdk/version.py",
+        "path_type": "hardlink",
+        "sha256": "c394907c282cc3749c8a8514186b61f3cab4d10a786d124e6eb0521017bc3e1e",
+        "size_in_bytes": 94,
+        "sha256_in_prefix": "c394907c282cc3749c8a8514186b61f3cab4d10a786d124e6eb0521017bc3e1e"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "516b0b95a94b7edadc2679cfc756c408db68e70d53bb696e33fa4b3961b8710c",
+        "size_in_bytes": 278,
+        "sha256_in_prefix": "516b0b95a94b7edadc2679cfc756c408db68e70d53bb696e33fa4b3961b8710c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/async_base_client.py",
+        "path_type": "hardlink",
+        "sha256": "9c6c9235e378ace591d6284461293d0182624fd47f36110f9e9c1251973ffad9",
+        "size_in_bytes": 9802,
+        "sha256_in_prefix": "9c6c9235e378ace591d6284461293d0182624fd47f36110f9e9c1251973ffad9"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/async_chat_stream.py",
+        "path_type": "hardlink",
+        "sha256": "88c7e5aed925f96f525d8c9c0759572681c4696fa974afa4f539f9e32fc0f347",
+        "size_in_bytes": 9662,
+        "sha256_in_prefix": "88c7e5aed925f96f525d8c9c0759572681c4696fa974afa4f539f9e32fc0f347"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "af26a8a011fec466baad4532797ffe24940ce7e7d23f91581eab194b2263161f",
+        "size_in_bytes": 211770,
+        "sha256_in_prefix": "af26a8a011fec466baad4532797ffe24940ce7e7d23f91581eab194b2263161f"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/async_internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "9ef126d6f5644abdd572702de1076b2fc1e9a084b3d8c3ba1ad2ad32176edb58",
+        "size_in_bytes": 9230,
+        "sha256_in_prefix": "9ef126d6f5644abdd572702de1076b2fc1e9a084b3d8c3ba1ad2ad32176edb58"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/async_slack_response.py",
+        "path_type": "hardlink",
+        "sha256": "b7af3d6bba96eb8949ece2a50d32f31f254cc1d9a7b1cdbc515c5d67816ce356",
+        "size_in_bytes": 6897,
+        "sha256_in_prefix": "b7af3d6bba96eb8949ece2a50d32f31f254cc1d9a7b1cdbc515c5d67816ce356"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/base_client.py",
+        "path_type": "hardlink",
+        "sha256": "87b09ed5d3609ef5ecf19129905ce70642ceb4ac77a74449f15574c74670b099",
+        "size_in_bytes": 28088,
+        "sha256_in_prefix": "87b09ed5d3609ef5ecf19129905ce70642ceb4ac77a74449f15574c74670b099"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/chat_stream.py",
+        "path_type": "hardlink",
+        "sha256": "915609829779a1cb6435c5a9f85f92fad20e6631622b8b51439cef16b2ed80f9",
+        "size_in_bytes": 9288,
+        "sha256_in_prefix": "915609829779a1cb6435c5a9f85f92fad20e6631622b8b51439cef16b2ed80f9"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/client.py",
+        "path_type": "hardlink",
+        "sha256": "027f6f136142cb4a96892ede5c05330c1d46be99b714252e0712a17c8520cec9",
+        "size_in_bytes": 205940,
+        "sha256_in_prefix": "027f6f136142cb4a96892ede5c05330c1d46be99b714252e0712a17c8520cec9"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/deprecation.py",
+        "path_type": "hardlink",
+        "sha256": "64d7542c783b740848366a2a257129e5e6843eb4edb7131211bfd49f7e67b982",
+        "size_in_bytes": 2016,
+        "sha256_in_prefix": "64d7542c783b740848366a2a257129e5e6843eb4edb7131211bfd49f7e67b982"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/file_upload_v2_result.py",
+        "path_type": "hardlink",
+        "sha256": "29c31c14a04db6dffedba46c5d79243174b62378642f7f4e380d7f02fb118213",
+        "size_in_bytes": 159,
+        "sha256_in_prefix": "29c31c14a04db6dffedba46c5d79243174b62378642f7f4e380d7f02fb118213"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "3801b12259e9e238ce48db67d2345bce33855f94c56f3f2f05d18836ecb6095d",
+        "size_in_bytes": 16605,
+        "sha256_in_prefix": "3801b12259e9e238ce48db67d2345bce33855f94c56f3f2f05d18836ecb6095d"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/legacy_base_client.py",
+        "path_type": "hardlink",
+        "sha256": "e8cda0083e99dd09461d4fd89b5245df546a20b19805ec9b7c3563a6645716d8",
+        "size_in_bytes": 24691,
+        "sha256_in_prefix": "e8cda0083e99dd09461d4fd89b5245df546a20b19805ec9b7c3563a6645716d8"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/legacy_client.py",
+        "path_type": "hardlink",
+        "sha256": "c9789e1806c1b17ff803747277c1e6b5c227d93d0fb8da13b414b537980eb10c",
+        "size_in_bytes": 208018,
+        "sha256_in_prefix": "c9789e1806c1b17ff803747277c1e6b5c227d93d0fb8da13b414b537980eb10c"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/legacy_slack_response.py",
+        "path_type": "hardlink",
+        "sha256": "12c0b1506474cd925e753f230986c46b300fb6abab0918b7e325f8f2f99b918a",
+        "size_in_bytes": 7562,
+        "sha256_in_prefix": "12c0b1506474cd925e753f230986c46b300fb6abab0918b7e325f8f2f99b918a"
+      },
+      {
+        "_path": "site-packages/slack_sdk/web/slack_response.py",
+        "path_type": "hardlink",
+        "sha256": "ac80b17ac9865ed56f5585aaf3783c03d3776b040f7128f3af51d26acbc9c233",
+        "size_in_bytes": 6620,
+        "sha256_in_prefix": "ac80b17ac9865ed56f5585aaf3783c03d3776b040f7128f3af51d26acbc9c233"
+      },
+      {
+        "_path": "site-packages/slack_sdk/webhook/__init__.py",
+        "path_type": "hardlink",
+        "sha256": "f33448fa80b22441a68da4ff9b5005147500e8587485144fc297e9fa9d2f1b25",
+        "size_in_bytes": 314,
+        "sha256_in_prefix": "f33448fa80b22441a68da4ff9b5005147500e8587485144fc297e9fa9d2f1b25"
+      },
+      {
+        "_path": "site-packages/slack_sdk/webhook/async_client.py",
+        "path_type": "hardlink",
+        "sha256": "8b169960f2d1d07c9e3fa447fc1af9992aa7bd8b009f4d7f6fc966247b911d34",
+        "size_in_bytes": 11886,
+        "sha256_in_prefix": "8b169960f2d1d07c9e3fa447fc1af9992aa7bd8b009f4d7f6fc966247b911d34"
+      },
+      {
+        "_path": "site-packages/slack_sdk/webhook/client.py",
+        "path_type": "hardlink",
+        "sha256": "584072175c318fcddc707ab5b3b776b6889e1780b1917672d4b6733516821939",
+        "size_in_bytes": 12186,
+        "sha256_in_prefix": "584072175c318fcddc707ab5b3b776b6889e1780b1917672d4b6733516821939"
+      },
+      {
+        "_path": "site-packages/slack_sdk/webhook/internal_utils.py",
+        "path_type": "hardlink",
+        "sha256": "f24f4235746f3c1b8d5dfc13e4bad6291dd307dd1b31258d7ac11219516879c2",
+        "size_in_bytes": 1351,
+        "sha256_in_prefix": "f24f4235746f3c1b8d5dfc13e4bad6291dd307dd1b31258d7ac11219516879c2"
+      },
+      {
+        "_path": "site-packages/slack_sdk/webhook/webhook_response.py",
+        "path_type": "hardlink",
+        "sha256": "e6ef7eddfcec1c06b130809d043fd109f773e92b5e82683853c40419825a8185",
+        "size_in_bytes": 322,
+        "sha256_in_prefix": "e6ef7eddfcec1c06b130809d043fd109f773e92b5e82683853c40419825a8185"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/INSTALLER",
+        "path_type": "hardlink",
+        "sha256": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc",
+        "size_in_bytes": 6,
+        "sha256_in_prefix": "bc33022edcb7639ff53355b4e91dade50a0bbf0299efeb6171d1ec0ba5029cfc"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/METADATA",
+        "path_type": "hardlink",
+        "sha256": "42be89bfeaf166610fa7d80c5548dba961414acdf35b48b527656e0c0db19eb3",
+        "size_in_bytes": 15248,
+        "sha256_in_prefix": "42be89bfeaf166610fa7d80c5548dba961414acdf35b48b527656e0c0db19eb3"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/RECORD",
+        "path_type": "hardlink",
+        "sha256": "cf0482017cd5d2de2fec3b400140540e8c6bf1f6faf29a65a9f98ce7be6b7c14",
+        "size_in_bytes": 25013,
+        "sha256_in_prefix": "cf0482017cd5d2de2fec3b400140540e8c6bf1f6faf29a65a9f98ce7be6b7c14"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/REQUESTED",
+        "path_type": "hardlink",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "size_in_bytes": 0,
+        "sha256_in_prefix": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/WHEEL",
+        "path_type": "hardlink",
+        "sha256": "4dd4392ed3702eec530a3831379d4081d539c3e2a407db6d98b6f38d31f4da98",
+        "size_in_bytes": 109,
+        "sha256_in_prefix": "4dd4392ed3702eec530a3831379d4081d539c3e2a407db6d98b6f38d31f4da98"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/direct_url.json",
+        "path_type": "hardlink",
+        "sha256": "94599bd13eab1cfe0239bc4e8f8b75e49823b3f0024566fc44a878a59e64323d",
+        "size_in_bytes": 120,
+        "sha256_in_prefix": "94599bd13eab1cfe0239bc4e8f8b75e49823b3f0024566fc44a878a59e64323d"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/licenses/LICENSE",
+        "path_type": "hardlink",
+        "sha256": "088e0b5b7549aa3b55345661d7036fe056ab472044bc8b17cff58864288d9522",
+        "size_in_bytes": 1091,
+        "sha256_in_prefix": "088e0b5b7549aa3b55345661d7036fe056ab472044bc8b17cff58864288d9522"
+      },
+      {
+        "_path": "site-packages/slack_sdk-3.41.0.dist-info/top_level.txt",
+        "path_type": "hardlink",
+        "sha256": "5de28e1d6e29eaa8d12dd6399adad081e83f5704a440ea820e49539e88bba8ff",
+        "size_in_bytes": 16,
+        "sha256_in_prefix": "5de28e1d6e29eaa8d12dd6399adad081e83f5704a440ea820e49539e88bba8ff"
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 806
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/__pycache__/deprecation.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 789
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/__pycache__/errors.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 561
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/rtm/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 416
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/rtm/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 417
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/signature/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 359
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/signature/__pycache__/verifier.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3725
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/__pycache__/version.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 198
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 752
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/async_base_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6399
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 485
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/async_internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7815
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/async_slack_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7456
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/base_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 21700
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 540
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/actions.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 750
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/attachments.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 534
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/blocks.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 668
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/dialog_elements.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 772
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/dialogs.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 366
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/elements.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1503
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/interactions.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6790
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/messages.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 223
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/objects.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 864
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/classes/__pycache__/views.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 422
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 369
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/deprecation.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1243
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2732
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/web/__pycache__/slack_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 405
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/webhook/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 505
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/webhook/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6478
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/webhook/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5982
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/webhook/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1997
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack/webhook/__pycache__/webhook_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 758
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1647
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/__pycache__/aiohttp_version_checker.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1423
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 515
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 257
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 365
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 14694
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 15042
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2217
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/logs.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 51549
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/audit_logs/v1/__pycache__/response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1664
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/errors/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3422
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1290
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/async_handler.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3290
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_async_handlers.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5297
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_handlers.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4939
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/builtin_interval_calculators.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2707
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/handler.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3014
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/interval_calculator.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 954
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/jitter.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1300
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/request.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2198
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1496
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/http_retry/__pycache__/state.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1231
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2615
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/attachments/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 30961
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/__pycache__/basic_objects.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7701
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2727
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/basic_components.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 35239
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/block_elements.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 114712
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/blocks/__pycache__/blocks.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 47400
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/__pycache__/dialoags.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 883
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/dialogs/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 35147
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4709
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/chunk.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5476
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/messages/__pycache__/message.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3520
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/metadata/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 45076
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/models/views/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12047
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 700
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/authorize_url_generator/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3429
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 390
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/amazon_s3/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 15941
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/async_cacheable_installation_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 7228
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/async_installation_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4178
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/cacheable_installation_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6653
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/file/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 13158
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/installation_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3921
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/__pycache__/internals.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1681
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 305
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/bot.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4969
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/models/__pycache__/installation.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8765
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlalchemy/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 30665
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/installation_store/sqlite3/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 25552
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/redirect_uri_page_renderer/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2968
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/sqlalchemy_utils/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1312
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 440
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/amazon_s3/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3943
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/async_state_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1112
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/file/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4322
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlalchemy/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 10114
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/sqlite3/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6093
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_store/__pycache__/state_store.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1039
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/state_utils/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2515
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 247
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/async_rotator.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5682
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/oauth/token_rotation/__pycache__/rotator.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 5320
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/__pycache__/proxy_env_variable_loader.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1447
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/rtm/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 27974
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/rtm/v2/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 239
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/rtm_v2/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 22172
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 843
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 246
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 461
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 16974
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 17689
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/default_arg.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 421
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/group.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 4113
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 6674
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12023
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/types.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1506
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/scim/v1/__pycache__/user.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 11238
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/signature/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 3745
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 553
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/aiohttp/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 24749
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12155
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/async_listeners.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1347
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 249
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 15936
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/connection.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 22518
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/frame_header.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1269
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/builtin/__pycache__/internals.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 16223
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 10341
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/interval_runner.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2442
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/listeners.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1261
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 166
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/logger/__pycache__/messages.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 557
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/request.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2849
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/__pycache__/response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 1623
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/websocket_client/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 13899
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/socket_mode/websockets/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 15285
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/__pycache__/version.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 254
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 457
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_base_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 9070
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_chat_stream.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 10668
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 225571
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 9677
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/async_slack_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8609
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/base_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 27336
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/chat_stream.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 10314
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 210274
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/deprecation.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2265
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/file_upload_v2_result.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 686
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 19437
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_base_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 25081
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 215964
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/legacy_slack_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8849
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/web/__pycache__/slack_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 8219
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/__init__.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 443
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/async_client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 11959
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/client.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 12645
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/internal_utils.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 2036
+      },
+      {
+        "_path": "lib/python3.13/site-packages/slack_sdk/webhook/__pycache__/webhook_response.cpython-313.pyc",
+        "path_type": "pyc_file",
+        "size_in_bytes": 839
+      }
+    ]
+  },
+  "link": {
+    "source": "/home/jsalvala/miniforge3/pkgs/slack-sdk-3.41.0-pyhcf101f3_0",
+    "type": 1
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "slack_sdk",
+  "version": "3.41.0",
+  "build": "pyh5d57e55_0",
+  "build_number": 0,
+  "channel": "https://conda.anaconda.org/conda-forge/noarch",
+  "subdir": "noarch",
+  "fn": "slack_sdk-3.41.0-pyh5d57e55_0.conda",
+  "md5": "e946e02ef7fe85809a0d051684f3a0f3",
+  "url": "https://conda.anaconda.org/conda-forge/noarch/slack_sdk-3.41.0-pyh5d57e55_0.conda",
+  "sha256": "1488c5361be7113b6f36e79920b8ab52c3294a30ca3d4ec86d3bf42ea4037289",
+  "depends": [
+    "python >=3.10",
+    "slack-sdk ==3.41.0 pyhcf101f3_0",
+    "python"
+  ],
+  "constrains": [],
+  "noarch": "python",
+  "license": "MIT",
+  "package_type": "noarch_python",
+  "timestamp": 1773393765000,
+  "size": 7632,
+  "requested_spec": "None",
+  "package_tarball_full_path": "/home/jsalvala/miniforge3/pkgs/slack_sdk-3.41.0-pyh5d57e55_0.conda",
+  "extracted_package_dir": "/home/jsalvala/miniforge3/pkgs/slack_sdk-3.41.0-pyh5d57e55_0",
+  "files": [],
+  "paths_data": {
+    "paths_version": 1,
+    "paths": []
+  },
+  "link": {
+    "source": "/home/jsalvala/miniforge3/pkgs/slack_sdk-3.41.0-pyh5d57e55_0",
+    "type": 1
+  }
+}

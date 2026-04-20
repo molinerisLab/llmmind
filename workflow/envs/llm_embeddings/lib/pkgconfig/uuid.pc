@@ -1,0 +1,11 @@
+prefix=/home/molinerislab/LLMmind/llmmind/workflow/envs/llmmind
+exec_prefix=/home/molinerislab/LLMmind/llmmind/workflow/envs/llmmind
+libdir=/home/molinerislab/LLMmind/llmmind/workflow/envs/llmmind/lib
+includedir=/home/molinerislab/LLMmind/llmmind/workflow/envs/llmmind/include
+
+Name: uuid
+Description: Universally unique id library
+Version: 2.42.0
+Cflags: -I${includedir}/uuid
+Libs.private:  -lpthread
+Libs: -L${libdir} -luuid
