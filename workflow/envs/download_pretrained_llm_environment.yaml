@@ -3,5 +3,4 @@ channels:
   - nodefaults
 dependencies:
   - python=3.12
-  - PyTorch
-  - transformers
+  - huggingface_hub

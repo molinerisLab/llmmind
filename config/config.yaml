@@ -5,17 +5,21 @@ models:
     hf_name: "openlm-research/open_llama_3b"
 #    path: "./results/features/minhuh/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
-#  openllama_7b:
-#    name: "OpenLLaMA-7B"
+  openllama_7b:
+    name: "OpenLLaMA-7B"
+    hf_name: "openlm-research/open_llama_7b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
-#  openllama_13b:
-#    name: "OpenLLaMA-13B"
+  openllama_13b:
+    name: "OpenLLaMA-13B"
+    hf_name: "openlm-research/open_llama_13b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
-#  llama_7b:
-#    name: "Llama-7B"
+#  llama_2_7b:
+    name: "Llama-2-7b"
+    hf_name: "meta-llama/Llama-2-7b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-7b_pool-avg.pt"
 #  llama_13b:
-#    name: "Llama-13B"
+    name: "Llama-2-13b"
+    hf_name: "meta-llama/Llama-2-13b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-13b_pool-avg.pt"
 
 # subtasks of "schema" task
