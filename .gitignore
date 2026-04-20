@@ -3,4 +3,4 @@
 .snakemake
 resources/
 results/
-workflow/envs/llmmind/
+workflow/envs/llm_embeddings/
