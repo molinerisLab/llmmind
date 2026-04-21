@@ -5,7 +5,7 @@ MODEL_KEYS = list(config["models"].keys())
 rule all:
     input:
         expand(
-            "results/cosine_similarity/{model}_cosine_similarity.parquet",
+            "results/{model}_embeddings.parquet",
             model=MODEL_KEYS
         )
 
@@ -26,7 +26,7 @@ rule get_embeddings:
         model_dir="resources/models/{model}",
         input_dir="resources/stimuli"
     output:
-        embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
+        embedding_dataframe="results/{model}_embeddings.parquet"
     params:
         quantization_method=config["quantization_method"],
         excluded_stimuli=" ".join(config["schema_subtasks"])
@@ -40,20 +40,4 @@ rule get_embeddings:
                 --model_path {input.model_dir:q} \
                 --quantization_method {params.quantization_method} \
                 --excluded_stimuli {params.excluded_stimuli}
-        """
-
-rule compute_cosine_similarity:
-    input:
-        embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
-    output:
-        cosine_similarity="results/cosine_similarity/{model}_cosine_similarity.parquet"
-    params:
-        distance=config["distance"]
-    conda:
-        "envs/compute_cosine_similarity_environment.yaml"
-    shell:
-        r"""
-            python3 workflow/scripts/compute_cosine_similarity.py \
-                --embedding_dataframe {input.embedding_dataframe:q} \
-                --cosine_similarity {output.cosine_similarity:q}
         """

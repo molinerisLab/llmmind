@@ -49,12 +49,12 @@ def main():
     )
     model.eval()
 
-    # Determine device for non-quantized models.
-    # For quantized models with device_map="auto", inputs can usually stay on the
+    # determine device for non-quantized models.
+    # for quantized models with device_map="auto", inputs can usually stay on the
     # device of the embedding layer / first parameter.
     device = next(model.parameters()).device
 
-    # Load txt files and keep both task name and stimulus text
+    # load txt files and keep both task name and stimulus text
     items = []
     pattern = re.compile(r"^(.+)_transcript\.txt$")
 
@@ -80,7 +80,7 @@ def main():
     records = []
     with torch.no_grad():
         for item in items:
-            # Tokenize one stimulus at a time on CPU
+            # tokenize one stimulus at a time on CPU
             tokens = tokenizer(
                 item["stimulus"],
                 padding=True,
@@ -88,7 +88,7 @@ def main():
                 return_tensors="pt"
             )
 
-            # Move only this stimulus to GPU
+            # move only the stimulus tokenized to GPU
             tokens = {k: v.to(device) for k, v in tokens.items()}
 
             llm_output = model(**tokens)
