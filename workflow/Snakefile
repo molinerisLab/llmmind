@@ -51,7 +51,7 @@ rule compute_cosine_similarity:
         "envs/compute_cosine_similarity_environment.yaml"
     shell:
         r"""
-            python3 workflow/scripts/cosine_similarity.py \
+            python3 workflow/scripts/compute_cosine_similarity.py \
                 --embedding_dataframe {input.embedding_dataframe:q} \
                 --cosine_similarity {output.cosine_similarity:q}
         """

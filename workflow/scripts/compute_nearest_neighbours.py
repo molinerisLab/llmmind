@@ -15,8 +15,7 @@ def main():
                       type = str, 
                       help = "Path to the file containing the nearest neighbours of the primary concepts")
     args = parser.parse_args()
-
-    primary_concept = args.primary_concept
+    
     number_of_neighbours = args.number_of_neighbours
     cosine_similarity = args.cosine_similarity
     nearest_neighbours = args.nearest_neighbours
@@ -47,7 +46,7 @@ def main():
     "neighbour": neighbours[idx_topk.reshape(-1)], 
         "cosine_similarity": scores_topk.reshape(-1)
     })
-    
+
     # print dataframe of nearest neighbours
     print(nearest_neighbours_df.to_string())
 
