@@ -34,3 +34,6 @@ schema_subtasks:
 
 # quantization method to use when computing embeddings (e.g., "4bit", "8bit", or None for no quantization)
 quantization_method: "4bit"
+
+# number of nearest neighbours to compute for each stimulus and model
+number_of_neighbours: 3
