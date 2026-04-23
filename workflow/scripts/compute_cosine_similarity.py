@@ -44,9 +44,14 @@ def main():
         index = embedding_df.index, 
         columns = embedding_df.index
     )
+    result_df = result_df.sort_index()
 
     # save the pandas dataframe as a parquet file
     result_df.to_parquet(cosine_similarity, engine = "pyarrow", index = True)
+    
+    # print the alignment score dataframe
+    with pd.option_context("display.max_rows", None, "display.max_columns", None):
+        print(result_df)
 
 if __name__ == "__main__":
     main()

@@ -3,23 +3,29 @@ models:
   openllama_3b:
     name: "OpenLLaMA-3B"
     hf_name: "openlm-research/open_llama_3b"
+    quantization_method: null
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_3b_pool-avg.pt"
   openllama_7b:
     name: "OpenLLaMA-7B"
     hf_name: "openlm-research/open_llama_7b"
+    quantization_method: null
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_7b_pool-avg.pt"
   openllama_13b:
     name: "OpenLLaMA-13B"
     hf_name: "openlm-research/open_llama_13b"
+    quantization_method: "4bit"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
 #  llama_2_7b:
-    name: "Llama-2-7b"
-    hf_name: "meta-llama/Llama-2-7b"
+#    name: "Llama-2-7b"
+#    hf_name: "meta-llama/Llama-2-7b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-7b_pool-avg.pt"
 #  llama_2_13b:
-    name: "Llama-2-13b"
-    hf_name: "meta-llama/Llama-2-13b"
+#    name: "Llama-2-13b"
+#    hf_name: "meta-llama/Llama-2-13b"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/huggyllama_llama-13b_pool-avg.pt"
+
+# number of nearest neighbours to compute for each stimulus and model
+number_of_neighbours: 5
 
 # subtasks of "schema" task
 schema_subtasks:
@@ -31,9 +37,3 @@ schema_subtasks:
   - "shame"
   - "upintheair"
   - "vinny"
-
-# quantization method to use when computing embeddings (e.g., "4bit", "8bit", or None for no quantization)
-quantization_method: "4bit"
-
-# number of nearest neighbours to compute for each stimulus and model
-number_of_neighbours: 3

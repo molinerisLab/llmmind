@@ -21,7 +21,7 @@ def main():
     nearest_neighbours = args.nearest_neighbours
 
     # load the dataframe
-    cosine_similarity_df = pd.read_parquet(cosine_similarity, engine = "pyarrow")
+    cosine_similarity_df = pd.read_parquet(cosine_similarity, engine="pyarrow")
 
     X = cosine_similarity_df.values
     concepts = cosine_similarity_df.index.to_numpy()
@@ -46,9 +46,14 @@ def main():
     "neighbour": neighbours[idx_topk.reshape(-1)], 
         "cosine_similarity": scores_topk.reshape(-1)
     })
+    nearest_neighbours_df = nearest_neighbours_df.sort_index()
 
     # save the nearest neighbours to primary concept as a parquet file
-    nearest_neighbours_df.to_parquet(nearest_neighbours, engine = "pyarrow", index = True)
+    nearest_neighbours_df.to_parquet(nearest_neighbours, engine="pyarrow", index=True)
+    
+    # print the alignment score dataframe
+    with pd.option_context("display.max_rows", None, "display.max_columns", None):
+        print(nearest_neighbours_df)
 
 if __name__ == "__main__":
     main()

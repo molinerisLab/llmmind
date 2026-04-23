@@ -28,7 +28,11 @@ rule get_embeddings:
     output:
         embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     params:
-        quantization_method=config["quantization_method"],
+        quantization_method=lambda wc: (
+            f"--quantization_method {config['models'][wc.model]['quantization_method']}"
+            if config["models"][wc.model]["quantization_method"] is not None
+            else ""
+        ),
         excluded_stimuli=" ".join(config["schema_subtasks"])
     conda:
         "envs/get_embeddings_environment.yaml"
@@ -38,7 +42,7 @@ rule get_embeddings:
                 --input_dir {input.input_dir:q} \
                 --output {output.embedding_dataframe:q} \
                 --model_path {input.model_dir:q} \
-                --quantization_method {params.quantization_method} \
+                {params.quantization_method} \
                 --excluded_stimuli {params.excluded_stimuli}
         """
 

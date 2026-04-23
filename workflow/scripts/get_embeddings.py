@@ -25,6 +25,7 @@ def main():
                         help="Path to the language model")
     parser.add_argument("--quantization_method",
                         choices=["4bit", "8bit"],
+                        default=None,
                         help="Quantization method")
     parser.add_argument("--excluded_stimuli",
                         nargs="*",
@@ -42,11 +43,17 @@ def main():
     elif args.quantization_method == "8bit":
         quantization_config = BitsAndBytesConfig(load_in_8bit=True)
 
-    model = AutoModel.from_pretrained(
-        args.model_path,
-        quantization_config=quantization_config,
-        device_map="auto" if quantization_config is not None else None
-    )
+    if quantization_config is not None:
+        model = AutoModel.from_pretrained(
+            args.model_path,
+            quantization_config=quantization_config,
+            device_map="auto"
+        )
+        device = next(model.parameters()).device
+    else:
+        device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+        model = AutoModel.from_pretrained(args.model_path).to(device)
+    
     model.eval()
 
     # determine device for non-quantized models.
@@ -102,7 +109,6 @@ def main():
             records.append(embedding)
 
     df = pd.DataFrame(records, index=[item["task"] for item in items])
-    df.index.name = "task"
     df = df.astype("float32")
     df.to_parquet(args.output, engine="pyarrow", index=True)
 
