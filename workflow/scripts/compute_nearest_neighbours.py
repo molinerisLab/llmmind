@@ -29,16 +29,16 @@ def main():
     k_eff = min(number_of_neighbours, X.shape[1] - 1)
 
     # row by row, partition it storing the indices of largest values in the last positions, then keep only those
-    idx_part = np.argpartition(X, -k_eff, axis = 1)[:, -k_eff:]
+    idx_part = np.argpartition(X, -k_eff, axis=1)[:, -k_eff:]
     # row by row, take the values corresponding to the indices selected above
-    scores_part = np.take_along_axis(X, idx_part, axis = 1)
-    
+    scores_part = np.take_along_axis(X, idx_part, axis=1)
+
     # row by row, returns the indices that would sort that row in ascending order, then reverse it
-    order = np.argsort(scores_part, axis = 1)[:, ::-1]
+    order = np.argsort(scores_part, axis=1)[:, ::-1]
     # row by row, take the indices according to the order selected above
-    idx_topk = np.take_along_axis(idx_part, order, axis = 1)
+    idx_topk = np.take_along_axis(idx_part, order, axis=1)
     # row by row, take the values according to the indices selected above
-    scores_topk = np.take_along_axis(X, idx_topk, axis = 1)
+    scores_topk = np.take_along_axis(X, idx_topk, axis=1)
 
     # create a pandas dataframe to store the nearest neighbours of each concept
     nearest_neighbours_df = pd.DataFrame({

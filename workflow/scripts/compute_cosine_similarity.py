@@ -13,7 +13,7 @@ def normalize_l2(x):
             return x
         return x/norm
     # if x is a higher-dimensional array, compute the l2 norm along the columns
-    norm = np.linalg.norm(x, 2, axis = 1, keepdims = True)
+    norm = np.linalg.norm(x, 2, axis=1, keepdims=True)
     return np.where(norm == 0, x, x/norm) # short-hand for what has been done for one-dimnensional arrays
 
 def main():
@@ -30,7 +30,7 @@ def main():
     cosine_similarity = args.cosine_similarity
 
     # load the dataframe
-    embedding_df = pd.read_parquet(embedding_dataframe, engine = "pyarrow")
+    embedding_df = pd.read_parquet(embedding_dataframe, engine="pyarrow")
     
     # compute cosine similarities for all the concepts in the embedding dataframe
     X = normalize_l2(embedding_df.values)
@@ -47,7 +47,7 @@ def main():
     result_df = result_df.sort_index()
 
     # save the pandas dataframe as a parquet file
-    result_df.to_parquet(cosine_similarity, engine = "pyarrow", index = True)
+    result_df.to_parquet(cosine_similarity, engine="pyarrow", index=True)
     
     # print the alignment score dataframe
     with pd.option_context("display.max_rows", None, "display.max_columns", None):
