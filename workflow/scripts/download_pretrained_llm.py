@@ -10,7 +10,7 @@ def download_model_repo(model_name: str, save_dir: str) -> None:
 
 if __name__ == "__main__":
     if len(sys.argv) != 3:
-        print("Usage: python3 download_pretrained_llm.py <model_name> <save_dir>")
+        print("Usage: python3 workflow/scripts/download_pretrained_llm.py <model_name> <save_dir>")
         sys.exit(1)
 
     model_name = sys.argv[1]
