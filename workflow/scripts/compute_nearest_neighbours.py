@@ -51,9 +51,9 @@ def main():
     # save the nearest neighbours to primary concept as a parquet file
     nearest_neighbours_df.to_parquet(nearest_neighbours, engine="pyarrow", index=True)
     
-    # print the alignment score dataframe
-    with pd.option_context("display.max_rows", None, "display.max_columns", None):
-        print(nearest_neighbours_df)
+#    # print the alignment score dataframe
+#    with pd.option_context("display.max_rows", None, "display.max_columns", None):
+#        print(nearest_neighbours_df)
 
 if __name__ == "__main__":
     main()
