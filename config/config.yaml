@@ -13,7 +13,7 @@ models:
   openllama_13b:
     name: "OpenLLaMA-13B"
     hf_name: "openlm-research/open_llama_13b"
-    quantization_method: "4bit"
+    quantization_method: "8bit"
 #    url: "http://vision14.csail.mit.edu/prh/wit_1024/openlm-research_open_llama_13b_pool-avg.pt"
 #  llama_2_7b:
 #    name: "Llama-2-7b"
