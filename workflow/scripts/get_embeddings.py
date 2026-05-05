@@ -92,13 +92,20 @@ def main():
                 item["stimulus"],
                 padding=True,
                 truncation=True,
+                max_length=1024,
                 return_tensors="pt"
             )
 
             # move only the stimulus tokenized to GPU
             tokens = {k: v.to(device) for k, v in tokens.items()}
 
-            llm_output = model(**tokens)
+            with torch.inference_mode():
+                llm_output = model(
+                    **tokens,
+                    output_hidden_states=True,
+                    return_dict=True,
+                    use_cache=False
+                )
 
             pooled = mean_pool_last_hidden(
                 llm_output.last_hidden_state,
@@ -107,6 +114,9 @@ def main():
 
             embedding = pooled.squeeze(0).cpu().numpy()
             records.append(embedding)
+
+            del tokens, llm_output
+            torch.cuda.empty_cache()
 
     df = pd.DataFrame(records, index=[item["task"] for item in items])
     df = df.astype("float32")
