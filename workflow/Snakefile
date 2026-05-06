@@ -46,23 +46,23 @@ rule get_embeddings:
                 --excluded_stimuli {params.excluded_stimuli}
         """
 
-rule compute_cosine_similarity:
+rule compute_similarity:
     input:
         embedding_dataframe="results/embeddings/{model}_embeddings.parquet"
     output:
-        cosine_similarity="results/cosine_similarity/{model}_cosine_similarity.parquet"
+        similarity_dataframe="results/similarity/{model}_similarity.parquet"
     conda:
-        "envs/compute_cosine_similarity_environment.yaml"
+        "envs/compute_similarity_environment.yaml"
     shell:
         r"""
-            python3 workflow/scripts/compute_cosine_similarity.py \
+            python3 workflow/scripts/compute_similarity.py \
                 --embedding_dataframe {input.embedding_dataframe:q} \
-                --cosine_similarity {output.cosine_similarity:q}
+                --similarity_dataframe {output.similarity_dataframe:q}
         """
 
 rule compute_nearest_neighbours:
     input:
-        cosine_similarity="results/cosine_similarity/{model}_cosine_similarity.parquet"
+        similarity_dataframe="results/similarity/{model}_similarity.parquet"
     output:
         nearest_neighbours="results/nearest_neighbours/{model}_nearest_neighbours.parquet"
     params:
@@ -73,6 +73,6 @@ rule compute_nearest_neighbours:
         r"""
             python3 workflow/scripts/compute_nearest_neighbours.py \
                 --number_of_neighbours {params.number_of_neighbours:q} \
-                --cosine_similarity {input.cosine_similarity:q} \
+                --similarity_dataframe {input.similarity_dataframe:q} \
                 --nearest_neighbours {output.nearest_neighbours:q}
         """

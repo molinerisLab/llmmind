@@ -8,24 +8,24 @@ def main():
     parser.add_argument("--number_of_neighbours", 
                       type = int, 
                       help = "Set the number of neighbours to compute")
-    parser.add_argument("--cosine_similarity", 
+    parser.add_argument("--similarity_dataframe", 
                       type = str, 
-                      help = "Path to the file containing computed cosine similarities")
+                      help = "Path to the file containing computed similarities")
     parser.add_argument("--nearest_neighbours", 
                       type = str, 
                       help = "Path to the file containing the nearest neighbours of the primary concepts")
     args = parser.parse_args()
 
     number_of_neighbours = args.number_of_neighbours
-    cosine_similarity = args.cosine_similarity
+    similarity_dataframe = args.similarity_dataframe
     nearest_neighbours = args.nearest_neighbours
 
     # load the dataframe
-    cosine_similarity_df = pd.read_parquet(cosine_similarity, engine="pyarrow")
+    similarity_df = pd.read_parquet(similarity_dataframe    , engine="pyarrow")
 
-    X = cosine_similarity_df.values
-    concepts = cosine_similarity_df.index.to_numpy()
-    neighbours = cosine_similarity_df.columns.to_numpy()
+    X = similarity_df.values
+    concepts = similarity_df.index.to_numpy()
+    neighbours = similarity_df.columns.to_numpy()
     k_eff = min(number_of_neighbours, X.shape[1] - 1)
 
     # row by row, partition it storing the indices of largest values in the last positions, then keep only those
@@ -44,7 +44,7 @@ def main():
     nearest_neighbours_df = pd.DataFrame({
     "concept": np.repeat(concepts, k_eff), 
     "neighbour": neighbours[idx_topk.reshape(-1)], 
-        "cosine_similarity": scores_topk.reshape(-1)
+        "similarity": scores_topk.reshape(-1)
     })
     nearest_neighbours_df = nearest_neighbours_df.sort_index()
 
