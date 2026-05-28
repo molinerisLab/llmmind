@@ -58,8 +58,7 @@ def main():
         "neighbour": neighbours[idx_topk.reshape(-1)], 
         "similarity": scores_topk.reshape(-1)
     })
-    nearest_neighbours_df = nearest_neighbours_df.sort_index()
-
+    
     # save the nearest neighbours to primary concept as a parquet file
     nearest_neighbours_df.to_parquet(nearest_neighbours, engine="pyarrow", index=True)
     
