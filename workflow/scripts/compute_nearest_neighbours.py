@@ -30,6 +30,18 @@ def main():
 
     # row by row, partition it storing the indices of largest values in the last positions, then keep only those
     idx_part = np.argpartition(X, -k_eff, axis=1)[:, -k_eff:]
+    
+    # Unlike argsort (which sorts everything), argpartition only guarantees that:
+    #
+    #     The element at position k is the same as it would be in a completely sorted array
+    #     All elements before k are ≤ the element at position k
+    #     All elements after k are ≥ the element at position k
+    #
+    #     The elements in the two partitions are not sorted relative to each other.
+    #
+    # In the following code we sort the selected elements.
+    
+    
     # row by row, take the values corresponding to the indices selected above
     scores_part = np.take_along_axis(X, idx_part, axis=1)
 
@@ -42,8 +54,8 @@ def main():
 
     # create a pandas dataframe to store the nearest neighbours of each concept
     nearest_neighbours_df = pd.DataFrame({
-    "concept": np.repeat(concepts, k_eff), 
-    "neighbour": neighbours[idx_topk.reshape(-1)], 
+        "concept": np.repeat(concepts, k_eff), 
+        "neighbour": neighbours[idx_topk.reshape(-1)], 
         "similarity": scores_topk.reshape(-1)
     })
     nearest_neighbours_df = nearest_neighbours_df.sort_index()
